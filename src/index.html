@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
+
 <head>
+ @@include('_include/page-head.html')
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="scss/style.css">
+  <link rel="stylesheet" type="text/css" href="scss/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Jura|Ubuntu:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+
   <title>Северное сияние</title>
+
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__inner"></div>
-<!-- Навигация -->
-    <nav class="main_nav">
-        <ul class="main_nav__list">
-          <li class="main_nav__item--active"><a href="#">Легенды</a></li>
-          <li class="main_nav__item"><a href="#">Факты</a></li>
-          <li class="main_nav__item"><a href="#">Где и когда</a></li>
-          <li class="main_nav__item"><a href="#">Цены на отели</a></li>
-          <li class="main_nav__item"><a href="#">Отзывы</a></li>
-          <li class="main_nav__item"><a href="#">Контакты</a></li>
-        </ul>
-    </nav>
+  <header>
+
+<!-- Навигация-->
+   <div class="main_nav__bgc">
+        <div class="main_nav__bgc_block1"></div>
+        <div class="main_nav__bgc_block2">
+          <nav class="main_nav">
+              <div class="header__close"></div>
+              <ul class="main_nav__list">
+                <li class="main_nav__item"><a href="#">Легенды</a></li>
+                <li class="main_nav__item"><a href="#">Факты</a></li>
+                <li class="main_nav__item"><a href="#">Где и когда</a></li>
+                <li class="main_nav__item"><a href="#">Цены на отели</a></li>
+                <li class="main_nav__item"><a href="#">Отзывы</a></li>
+                <li class="main_nav__item"><a href="#">Контакты</a></li>
+              </ul>
+          </nav>
+        </div>
+        <div class="main_nav__bgc_block1"></div>
+
+
+
+
+     </div>
   </header>
+
 <!-- Первый экран -->
 <main>
   <section class="main_screen">
+  <img src="img/header_menu.png" alt="" class="header__gamb">
+
     <h1 class="main_screen__title">Северное сияние</h1>
-    <strong class="main_screen__title--subtitle">Факты, легенды и места обитания</strong>
+    <strong class="main_screen__subtitle">Факты, легенды и места обитания</strong>
 
     <div class="main_screen__sidebar">
-      <a href="" class="main__button--vk"></a>
-      <a href="#" class="main__button--allphoto">Больше фотографий</a>
+      <a href="" class="main_screen__button--vk"></a>
+      <a href="#" class="main_screen__button--allphoto">Больше фотографий</a>
     </div>
+
   </section>
 
 <!-- Второй экран:слайдер -->

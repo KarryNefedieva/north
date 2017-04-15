@@ -1,7 +1,25 @@
+@import 'blocks/header.scss';
+@import 'blocks/main_nav.scss';
+@import 'blocks/main_screen.scss';
+@import 'blocks/legend.scss';
+@import 'blocks/fact.scss';
+@import 'blocks/seasons.scss';
+@import 'blocks/feedback.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/price.scss';
+@import 'blocks/header.scss';
 @import 'variables.scss';
 
-@import 'global.scss';
-@import 'fonts.scss';
-// @import 'sprite.scss';
+@font-face{font-family:'font0475c723a666a5c519583942afd84bcc';
+src:url('http://nomail.com.ua/files/eot/0475c723a666a5c519583942afd84bcc.eot?#iefix') format('embedded-opentype'),
+url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd84bcc.woff') format('woff'),
+url('http://nomail.com.ua/files/woff2/0475c723a666a5c519583942afd84bcc.woff2') format('woff2');}@font-face{font-family:'Nord-Medium';src:local('Nord-Medium'),
+url('http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd84bcc.woff') format('woff');}#nordmedium{font-family:'Nord-Medium';}.font0475c723a666a5c519583942afd84bcc{font-family:'font0475c723a666a5c519583942afd84bcc';}
 
-@import 'blocks/page-header.scss';
+
+
+
+
+ul {
+
+}

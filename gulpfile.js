@@ -47,8 +47,9 @@ gulp.task('style', function(){
         mqpacker({ sort: true }),                           // объединение медиавыражений
     ]))
     .pipe(sourcemaps.write('/'))                            // записываем карту кода как отдельный файл (путь из константы)
-    .pipe(gulp.dest(dirs.build + '/css/'))                  // записываем CSS-файл (путь из константы)
-    .pipe(browserSync.stream())
+    .pipe(gulp.dest(dirs.build + '/css/'))
+    .pipe(browserSync.stream())                 // записываем CSS-файл (путь из константы)
+    // .pipe(browserSync.reload({stream: true}));
     .pipe(rename('style.min.css'))                          // переименовываем
     .pipe(cleanCSS())                                       // сжимаем
     .pipe(gulp.dest(dirs.build + '/css/'));                 // записываем CSS-файл (путь из константы)
