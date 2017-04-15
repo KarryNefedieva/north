@@ -3,15 +3,34 @@
 
 .main_screen{
 background-image: url(../../img/header_bgc.jpg) ;
-background-size: cover;
+
 position: relative;
-width: 100%;
-height: 500px;
+
+
 display: flex;
 align-items: stretch;
 color: white;
 z-index: 1;
 flex-direction:column;
+@media (max-width:  $screen-xs) {
+height: 500px;
+background-size: cover;
+
+}
+
+@media (min-width:  $screen-xs +1px)and (max-width:  $screen-sm) {
+height: 600px;
+// background-size:cover;
+background-position:bottom;
+
+}
+@media (min-width:  $screen-sm +1px){
+background-size:cover;
+background-position:bottom;
+height: 650px;
+
+
+}
 
 }
 
@@ -27,15 +46,45 @@ margin-left: 10px;
 
 .main_screen__title{
 font-family:$Nord;
+
+@media (max-width:  $screen-xs) {
 margin-left: 10px;
 margin-top: 170px;
-font-size: 30px;
+font-size: 30px;}
 
+@media (min-width:  $screen-xs +1px)and (max-width:  $screen-sm) {
+margin-left: 75px;
+margin-top: 240px;
+font-size: 50px;
+}
+@media (min-width:  $screen-sm +1px){
+margin-left: 55px;
+margin-top: 240px;
+font-size: 50px;
+}
 }
 
 .main_screen__subtitle{
 font-family:$Jura;
+
+@media (max-width:  $screen-xs)and (max-width:  $screen-sm) {
 margin-left: 10px;
 font-size: 16px;
+}
+@media (min-width:  $screen-xs +1px) {
+position: relative;
+top: -25px;
+margin-left: 75px;
+font-weight: 400;
+font-size: 20px;
+}
 
+@media (min-width:  $screen-sm +1px){
+position: relative;
+top: -25px;
+
+margin-left: 55px;
+font-weight: 400;
+font-size: 20px;
+}
 }

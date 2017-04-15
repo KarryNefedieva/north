@@ -1,7 +1,9 @@
 @import 'variables.scss';
+
 .main_nav__bgc{
-  display: flex;
+ display: flex;
  width: 100%;
+
 position: absolute;
 }
 .main_nav__bgc_block1 {
@@ -12,7 +14,7 @@ position: absolute;
 
 
   @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm)  {
-  width: 10px;
+  width: 20px;
   display: block;
   background-color: #000;
   height: 60px;
@@ -50,22 +52,22 @@ position: absolute;
 
   @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
 
-  background-color: green;
+  background-color: rgba(28,21,49,0.5);
   display: block;
   height: 60px;
   width: 100%;
   flex-shrink: 2;
-  opacity: 0.5;
+
   margin-top: 35px;
   }
 
   @media (min-width:  $screen-sm +1px) {
-  background-color: green;
+   background-color: rgba(28,21,49,0.5);
   display: block;
   height: 60px;
   width: 100%;
   flex-shrink: 2;
-  opacity: 0.5;
+
   margin-top: 20px;
   }
 
@@ -112,7 +114,6 @@ position: absolute;
   }
 
 .main_nav{
- z-index: 1;
 
 
 
@@ -122,9 +123,11 @@ position: absolute;
   display: flex;
 
 
+
+
   @media (min-width:  $screen-xxs) and (max-width:  $screen-xs) {
   flex-direction: column;
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   top: -105px;
    }
@@ -132,16 +135,18 @@ position: absolute;
   @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
   flex-direction: row;
   position: absolute;
-  top: -40px;
-  z-index: 1;
-
+  top: -47px;
+  z-index: 3;
+  min-width:$screen-xs +1px;
   }
 
   @media (min-width:  $screen-sm +1px){
   flex-direction: row;
   position: absolute;
-  top: -55px;
-  z-index: 1;
+  top: -62px;
+  z-index: 3;
+  justify-content: space-around;
+  min-width:$screen-xs +1px;
    }
 
 
@@ -171,6 +176,8 @@ text-decoration: none;
 font-family: $Jura;
 padding-top: 20px;
 justify-content:space-between;
+
+
 
 
 
