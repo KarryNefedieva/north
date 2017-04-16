@@ -17,31 +17,40 @@ height: 300px;
 
 .fact__stage_blocks{
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
+margin-right: 55px;
+margin-left: 55px;
 }
 .fact__stage_block{
   float: left;
   flex-direction: row;
-justify-content:space-around;
+
 
 }
 .fact__title{
  font-family: $Jura;
+ position: relative;
+
 @media (max-width:  $screen-xs) {
 display: block;
 font-weight: 300;
 font-size: 20px;
+top: 40px;
+left: 10px;
 }
 @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
 display: block;
 font-weight: 300;
 font-size: 20px;
+top: 40px;
+left: 10px;
 }
 @media (min-width:  $screen-sm +1px) {
 display: block;
 font-weight: 300;
 font-size: 30px;
-margin-top: 70px;
+top: 70px;
+left: 55px;
  }
 }
 
