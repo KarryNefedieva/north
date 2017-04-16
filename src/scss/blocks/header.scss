@@ -1,9 +1,9 @@
 @import 'variables.scss';
 
-.main_nav__bgc{
- display: flex;
- width: 100%;
 
+.main_nav__bgc{
+display: flex;
+width: 100%;
 position: absolute;
 }
 .main_nav__bgc_block1 {
@@ -122,9 +122,6 @@ position: absolute;
 .main_nav__list{
   display: flex;
 
-
-
-
   @media (min-width:  $screen-xxs) and (max-width:  $screen-xs) {
   flex-direction: column;
   z-index: 3;
@@ -138,6 +135,7 @@ position: absolute;
   top: -47px;
   z-index: 3;
   min-width:$screen-xs +1px;
+  justify-content: space-around;
   }
 
   @media (min-width:  $screen-sm +1px){
@@ -175,7 +173,7 @@ margin-top: 105px;
 text-decoration: none;
 font-family: $Jura;
 padding-top: 20px;
-justify-content:space-between;
+
 
 
 
@@ -195,7 +193,7 @@ justify-content:space-between;
   text-decoration: none;
   color: white;
   z-index: 2;
-
+  justify-content:space-between;
   }
 
 
