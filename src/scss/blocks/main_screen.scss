@@ -18,13 +18,13 @@ background-size: cover;
 
 }
 
-@media (min-width:  $screen-xs +1px)and (max-width:  $screen-sm) {
+@media (min-width:  $screen-xs) {
 height: 600px;
 // background-size:cover;
 background-position:bottom;
 
 }
-@media (min-width:  $screen-sm +1px){
+@media (min-width:  $screen-sm){
 background-size:cover;
 background-position:bottom;
 height: 650px;

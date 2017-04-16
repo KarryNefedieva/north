@@ -1,0 +1,84 @@
+.fact{
+background-color: #f7f7f7;
+
+
+@media (max-width:  $screen-xs) {
+height: 430px;
+}
+@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+height: 182px;
+
+}
+ @media (min-width:  $screen-sm +1px) {
+height: 300px;
+
+ }
+}
+
+.fact__stage_blocks{
+display: flex;
+justify-content: space-around;
+}
+.fact__stage_block{
+  float: left;
+  flex-direction: row;
+justify-content:space-around;
+
+}
+.fact__title{
+ font-family: $Jura;
+@media (max-width:  $screen-xs) {
+display: block;
+font-weight: 300;
+font-size: 20px;
+}
+@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+display: block;
+font-weight: 300;
+font-size: 20px;
+}
+@media (min-width:  $screen-sm +1px) {
+display: block;
+font-weight: 300;
+font-size: 30px;
+margin-top: 70px;
+ }
+}
+
+.fact__stage_number{
+font-family: $Ubuntu;
+display: block;
+font-weight: 700;
+color: #e6e6e6;
+@media (max-width:  $screen-xs) {
+font-size: 27px;
+}
+@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+font-size: 27px;
+}
+@media (min-width:  $screen-sm +1px) {
+font-size: 45px;
+}
+}
+
+.fact__text{
+font-family: $Ubuntu;
+display: block;
+font-weight: 300;
+@media (max-width:  $screen-xs) {
+font-size: 12px;
+
+}
+@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+font-size: 12px;
+max-width:215px ;
+}
+@media (min-width:  $screen-sm +1px) {
+font-size: 16px;
+max-width: 315px;
+}
+}
+
+.fact__line{
+background-color: #98c8ac;
+}
