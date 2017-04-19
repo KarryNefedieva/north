@@ -1,8 +1,7 @@
 @import 'variables.scss';
 
-
 .main_screen{
-background-image: url(../../img/header_bgc.jpg) ;
+background-image: url(../img/header_bgc.jpg) ;
 
 position: relative;
 
@@ -12,6 +11,7 @@ align-items: stretch;
 color: white;
 z-index: 1;
 flex-direction:column;
+
 @media (max-width:  $screen-xs) {
 height: 500px;
 background-size: cover;
