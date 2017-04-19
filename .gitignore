@@ -1,8 +1,4 @@
-build/*
-!build/readme.md
 design/
-src/scss/sprite.scss
-src/img/sprite-svg.svg
 
 .Saved/
 _arc/
@@ -11,7 +7,6 @@ node_modules/
 .vscode/
 .DS_Store
 *.log
-*.sublime-*
 *.rar
 *.zip
 .idea
