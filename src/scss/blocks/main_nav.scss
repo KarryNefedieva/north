@@ -1,78 +1,80 @@
 @import 'variables.scss';
 
+.green{
+  border: 1px solid blue;
+}
 
-.main_nav__bgc{
+.main_nav {
+  z-index: 2;
+  display: flex;
+  display: flex;
+
+  position: absolute;
+
+  background-color: #1c1531;
+
+  width: 135px;
+  height: 500px;
+
+
+  @media (min-width: $screen-xs) {
 display: flex;
-width: 100%;
-position: absolute;
-
-}
-.main_nav__bgc_block1 {
-
-  @media (max-width:  $screen-xs) {
-  display: none;
-  }
-
-
-  @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm)  {
-  width: 20px;
-  display: block;
-  background-color: #000;
+  background-color: rgba(28,21,49,0.5);
   height: 60px;
-  opacity: 0;
   margin-top: 35px;
 
+  width: 95%;
+  margin-right: 10px;
+  margin-left: 10px;
+  justify-content:space-between;
+  min-width: 500px;
   }
 
-  @media (min-width:  $screen-sm +1px) {
-  width: 75px;
-  display: block;
-  background-color: #000;
+  @media (min-width:$screen-sm) {
+    display: flex;
+  background-color: rgba(28,21,49,0.5);
   height: 60px;
-  opacity: 0;
-  margin-top: 35px;
+  margin-top: 20px;
+  width: 91%;
+   margin-right: 55px;
+  margin-left: 55px;
+  justify-content:space-between;
+
+
   }
+
 }
 
-.main_nav__bgc_block2 {
+.main_nav__list{
   font-family: 'Jura', sans-serif;
   font-size: 14px;
-  z-index: 2;
-  height: 60px;
-  display: block;
-
-
-
-  @media (max-width:  $screen-xs) {
-   background-color: #1c1531;
-  width: 135px;
   display: flex;
-  align-content: stretch;
-  height: 500px;
+  flex-direction: column;
+  z-index: 3;
+  position: absolute;
+  top: -105px;
+
+
+  @media (min-width:  $screen-xs) {
+  flex-direction: row;
+  position: absolute;
+  top: -85px;
+  z-index: 3;
+  justify-content:space-between;
   }
 
-  @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+  @media (min-width:  $screen-sm ){
+  flex-direction: row;
+  position: absolute;
+  top: -85px;
+  z-index: 3;
+  justify-content:space-between;
+   }
 
-  background-color: rgba(28,21,49,0.5);
-  display: block;
-  height: 60px;
-  width: 100%;
-  flex-shrink: 2;
-
-  margin-top: 35px;
-  }
-
-  @media (min-width:  $screen-sm +1px) {
-   background-color: rgba(28,21,49,0.5);
-  display: block;
-  height: 60px;
-  width: 100%;
-  flex-shrink: 2;
-
-  margin-top: 20px;
-  }
 
 }
+
+
 
 .header__gamb{
 
@@ -114,49 +116,13 @@ position: absolute;
 
   }
 
-.main_nav{
-
-
-
-}
-
-.main_nav__list{
-  display: flex;
-
-  @media (min-width:  $screen-xxs) and (max-width:  $screen-xs) {
-  flex-direction: column;
-  z-index: 3;
-  position: absolute;
-  top: -105px;
-   }
-
-  @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
-  flex-direction: row;
-  position: absolute;
-  top: -47px;
-  z-index: 3;
-  min-width:$screen-xs +1px;
-  justify-content:space-between;
-  }
-
-  @media (min-width:  $screen-sm +1px){
-  flex-direction: row;
-  position: absolute;
-  top: -62px;
-  z-index: 3;
-  min-width:$screen-xs +1px;
-  justify-content:space-between;
-   }
-
-
-}
-
 
 
 
 
 .main_nav__item{
 list-style-type: none;
+display: block;
 
 
 @media (max-width:  $screen-xs) {
@@ -167,6 +133,7 @@ margin-top: 20px;
 .main_nav__item:first-child{
 @media (max-width:  $screen-xs) {
 margin-top: 105px;
+justify-content:space-between;
 }
 }
 
@@ -175,6 +142,7 @@ margin-top: 105px;
 text-decoration: none;
 font-family: $Jura;
 padding-top: 20px;
+
 
 
 

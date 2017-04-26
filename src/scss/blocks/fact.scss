@@ -1,56 +1,96 @@
 .fact{
 background-color: #f7f7f7;
+height: 450px;
+display: block;
 
 
-@media (max-width:  $screen-xs) {
-height: 430px;
-}
-@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+@media (min-width:  $screen-xs) {
 height: 182px;
 
 }
- @media (min-width:  $screen-sm +1px) {
+ @media (min-width:  $screen-sm) {
 height: 300px;
 
  }
 }
 
+.fact__green_line{
+  background-color:#03eaa5;
+
+  position: absolute;
+  width: 2px;
+  height: 235px;
+  margin-top: 50px;
+  margin-left: 5px;
+
+
+@media (min-width:  $screen-xs ) {
+height: 1px;
+width: 92%;
+margin-top: 60px;
+}
+@media (min-width:  $screen-sm ) {
+height: 1px;
+width: 92%;
+margin-top: 80px;
+}
+}
+
 .fact__stage_blocks{
 display: flex;
+flex-direction: column;
+margin-right: 10px;
+margin-left: 10px;
+
+@media (min-width:  $screen-xs ) {
+flex-direction: row;
+justify-content: space-between;
+margin-right: 20px;
+margin-left: 20px;
+}
+
+
+@media (min-width:  $screen-sm ) {
+flex-direction: row;
 justify-content: space-between;
 margin-right: 55px;
 margin-left: 55px;
 }
+}
+
+
+
 .fact__stage_block{
   float: left;
   flex-direction: row;
-
-
+  margin-top: 30px;
 }
+
+
+
+
 .fact__title{
- font-family: $Jura;
- position: relative;
+font-family: $Jura;
 
-@media (max-width:  $screen-xs) {
 display: block;
 font-weight: 300;
 font-size: 20px;
-top: 40px;
-left: 10px;
-}
-@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
-display: block;
+padding-top: 30px;
+padding-left: 10px;
+
+@media (min-width:  $screen-xs ) {
+
 font-weight: 300;
 font-size: 20px;
-top: 40px;
-left: 10px;
+padding-top: 40px;
+padding-left: 10px;
 }
-@media (min-width:  $screen-sm +1px) {
-display: block;
+@media (min-width:  $screen-sm ) {
+
 font-weight: 300;
 font-size: 30px;
-top: 70px;
-left: 55px;
+padding-top: 65px;
+padding-left: 55px;
  }
 }
 
@@ -59,14 +99,37 @@ font-family: $Ubuntu;
 display: block;
 font-weight: 700;
 color: #e6e6e6;
-@media (max-width:  $screen-xs) {
 font-size: 27px;
-}
-@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+position: relative;
+left: 10px;
+
+
+@media (min-width:  $screen-xs) {
 font-size: 27px;
+position: relative;
+left: -25px;
 }
-@media (min-width:  $screen-sm +1px) {
+@media (min-width:  $screen-sm ) {
 font-size: 45px;
+position: relative;
+left: -25px;
+}
+
+
+}
+
+.fact__stage_number:before{
+content:'';
+display: inline-block;
+height: 15px;
+width: 15px;
+background-color:#03eaa5;
+position: relative;
+left: -10px;
+
+@media (min-width:  $screen-xs ){
+top:15px;
+left: 20px;
 }
 }
 
@@ -74,15 +137,14 @@ font-size: 45px;
 font-family: $Ubuntu;
 display: block;
 font-weight: 300;
-@media (max-width:  $screen-xs) {
 font-size: 12px;
+margin-left: 25px;
 
-}
-@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+@media (min-width:  $screen-xs ){
 font-size: 12px;
-max-width:215px ;
+max-width:215px;
 }
-@media (min-width:  $screen-sm +1px) {
+@media (min-width:  $screen-sm) {
 font-size: 16px;
 max-width: 315px;
 }
