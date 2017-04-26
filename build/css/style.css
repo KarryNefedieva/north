@@ -451,16 +451,41 @@ ul {
   font-family: 'Jura', sans-serif;
   font-size: 14px;
   z-index: 2;
-  height: 60px;
-  display: block; }
+  display: block;
+  background-color: rgba(28, 21, 49, 0.5);
+  display: block;
+  height: 500px;
+  width: 40px;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  position: absolute;
+  right: 0; }
 
 .main_screen__button--vk {
   margin-top: 40px;
   margin-left: 3px; }
 
+a.main_screen__button--allphoto {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 200px;
+  position: relative;
+  left: -80px;
+  margin-top: 150px;
+  webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
 a.main_screen__button--allphoto :hover {
   text-decoration: none;
   color: #03eaa5; }
+
+.legend {
+  background-size: cover;
+  height: 400px;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  color: white; }
 
 .legend__container {
   display: -ms-flexbox;
@@ -471,12 +496,46 @@ a.main_screen__button--allphoto :hover {
   -ms-flex-positive: 2;
       flex-grow: 2; }
 
+.legend__right-block {
+  display: none; }
+
 .legend__title {
-  font-family: "Jura", sans-serif; }
+  color: white;
+  font-family: "Jura", sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 40px; }
+
+.legend__text_block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin-top: 30px; }
 
 .legend__text {
   display: block;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 1.8; }
+
+.legend__left_arrow:before {
+  display: none; }
+
+.legend__right_arrow:before {
+  display: none; }
+
+.legend__pagination {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  top: 320px; }
 
 .legend__pagination_item {
   height: 10px;
@@ -555,6 +614,95 @@ a.main_screen__button--allphoto :hover {
 .fact__line {
   background-color: #98c8ac; }
 
+.seasons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.seasons__map {
+  background-image: url(../img/map.jpg);
+  background-size: cover;
+  background-color: red;
+  height: 350px; }
+
+.season__description {
+  font-family: "Ubuntu", sans-serif; }
+
+.season__title {
+  font-family: "Jura", sans-serif;
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 30px;
+  padding-left: 10px; }
+
+.season__legend {
+  position: relative;
+  top: 220px; }
+
+.season__legend_clarification--red {
+  margin-left: 20px;
+  margin-right: 10px;
+  font-style: "Jura", sans-serif;
+  font-size: 10px; }
+
+.season__legend_clarification--red:before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #ef8989;
+  position: relative;
+  left: -10px; }
+
+.season__legend_clarification--blue {
+  margin-right: 20px;
+  font-style: "Jura", sans-serif;
+  font-size: 10px; }
+
+.season__legend_clarification--blue:before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #04a8a8;
+  position: relative;
+  left: -10px; }
+
+.season__legend_clarification--yellow {
+  margin-right: 20px;
+  font-style: "Jura", sans-serif;
+  font-size: 10px; }
+
+.season__legend_clarification--yellow:before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #cdd63f;
+  position: relative;
+  left: -10px; }
+
+.season__legend_clarification--orange {
+  font-style: "Jura", sans-serif;
+  font-size: 10px; }
+
+.season__legend_clarification--orange:before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #efb672;
+  position: relative;
+  left: -10px; }
+
+.season__comment {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 40px; }
+
 @font-face {
   font-family: 'font0475c723a666a5c519583942afd84bcc';
   src: url("http://nomail.com.ua/files/eot/0475c723a666a5c519583942afd84bcc.eot?#iefix") format("embedded-opentype"), url("http://nomail.com.ua/files/woff/0475c723a666a5c519583942afd84bcc.woff") format("woff"), url("http://nomail.com.ua/files/woff2/0475c723a666a5c519583942afd84bcc.woff2") format("woff2"); }
@@ -593,6 +741,62 @@ a.main_screen__button--allphoto :hover {
   .main_screen {
     height: 600px;
     background-position: bottom; }
+  .main_screen__title {
+    margin-left: 75px;
+    margin-top: 240px;
+    font-size: 50px; }
+  .main_screen__subtitle {
+    position: relative;
+    top: -25px;
+    margin-left: 75px;
+    font-weight: 400;
+    font-size: 20px; }
+  .main_screen__sidebar {
+    display: none; }
+  a.main_screen__button--allphoto {
+    display: none; }
+  .legend {
+    background-color: #eaeaec;
+    display: block;
+    width: 100%;
+    -ms-flex-negative: 2;
+    flex-shrink: 2;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .legend__right-block {
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    background-image: url("../img/legend_bgc780.png");
+    background-size: cover;
+    width: 20%;
+    flex-schrink: 2;
+    height: 400px;
+    margin-right: 0; }
+  .legend__left_arrow:before {
+    content: "";
+    position: relative;
+    background-image: url("../../img/slider_right.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 33px;
+    height: 50px;
+    top: 50px; }
+  .legend__right_arrow:before {
+    content: "";
+    position: relative;
+    background-image: url("../../img/slider_left.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 45px;
+    height: 50px;
+    top: 50px;
+    left: 30px; }
+  .legend__pagination {
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 60px;
+    margin-bottom: 15px; }
   .fact {
     height: 182px; }
   .fact__green_line {
@@ -620,7 +824,45 @@ a.main_screen__button--allphoto :hover {
     left: 20px; }
   .fact__text {
     font-size: 12px;
-    max-width: 215px; } }
+    max-width: 215px; }
+  .seasons {
+    background-color: #eaeaec;
+    height: 330px; }
+  .seasons__map {
+    flex-schrink: 2;
+    background-size: cover;
+    height: 330px;
+    margin-left: 10px;
+    width: 50%; }
+  .season__description {
+    min-width: 450px; }
+  .season__title {
+    font-weight: 300;
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 0px;
+    margin-left: 10px; }
+  .season__legend {
+    margin-left: 10px;
+    margin-top: 40px; }
+  .season__legend_clarification--red {
+    font-size: 16px;
+    margin-right: 50px; }
+  .season__legend_clarification--blue {
+    font-size: 16px;
+    margin-right: 50px; }
+  .season__legend_clarification--yellow {
+    font-size: 16px;
+    margin-right: 50px; }
+  .season__legend_clarification--orange {
+    font-size: 16px;
+    margin-right: 50px; }
+  .season__comment {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 45px;
+    max-width: 400px;
+    line-height: 2; } }
 
 @media (min-width: 321px) {
   .header__gamb {
@@ -631,61 +873,16 @@ a.main_screen__button--allphoto :hover {
     font-size: 16px;
     text-decoration: none;
     color: white;
-    z-index: 2; }
-  .main_screen__subtitle {
-    position: relative;
-    top: -25px;
-    margin-left: 75px;
-    font-weight: 400;
-    font-size: 20px; }
-  .legend__left_arrow:before {
-    content: "";
-    position: relative;
-    background-image: url("../../img/slider_right.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 33px;
-    height: 50px;
-    top: 50px; }
-  .legend__right_arrow:before {
-    content: "";
-    position: relative;
-    background-image: url("../../img/slider_left.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 45px;
-    height: 50px;
-    top: 50px;
-    left: 30px; } }
+    z-index: 2; } }
 
 @media (min-width: 321px) and (max-width: 768px) {
-  .main_screen__title {
-    margin-left: 75px;
-    margin-top: 240px;
-    font-size: 50px; }
-  .main_screen__sidebar {
-    display: none; }
-  a.main_screen__button--allphoto {
-    display: none; }
-  .legend {
-    background-color: #eaeaec;
-    display: block;
-    width: 100%;
-    -ms-flex-negative: 2;
-    flex-shrink: 2;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-  .legend__right-block {
-    float: left;
-    background-image: url("../img/legend_bgc780.png");
-    background-size: cover;
-    width: 365px; }
   .legend__title {
     display: block;
     font-weight: 300;
     font-size: 20px;
     margin-left: 10px;
-    margin-top: 45px; }
+    margin-top: 45px;
+    color: black; }
   .legend__text_block {
     display: -ms-flexbox;
     display: flex;
@@ -699,12 +896,8 @@ a.main_screen__button--allphoto :hover {
     margin-left: 30px;
     line-height: 1.7;
     max-width: 300px;
-    flex-schrink: 2; }
-  .legend__pagination {
-    display: inline-block;
-    margin-left: 80px;
-    margin-top: 60px;
-    margin-bottom: 15px; } }
+    flex-schrink: 2;
+    color: black; } }
 
 @media (min-width: 768px) {
   .main_nav {
@@ -730,6 +923,70 @@ a.main_screen__button--allphoto :hover {
     background-size: cover;
     background-position: bottom;
     height: 650px; }
+  .main_screen__title {
+    margin-left: 55px;
+    margin-top: 240px;
+    font-size: 50px; }
+  .main_screen__subtitle {
+    position: relative;
+    top: -25px;
+    margin-left: 55px;
+    font-weight: 400;
+    font-size: 20px; }
+  a.main_screen__button--allphoto {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 200px;
+    position: relative;
+    left: -80px;
+    margin-top: 230px;
+    webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  .legend {
+    background-color: white;
+    display: block;
+    width: 100%;
+    -ms-flex-negative: 2;
+    flex-shrink: 2;
+    height: 545px;
+    margin-top: 20px; }
+  .legend__left_block {
+    min-width: 500px; }
+  .legend__right-block {
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    background-image: url("../img/legend_bgc1280.png");
+    background-size: cover;
+    width: 570px;
+    height: 545px;
+    margin-right: 55px;
+    flex-schrink: 2; }
+  .legend__left_arrow:before {
+    content: "";
+    position: relative;
+    background-image: url("../../img/slider_right1280.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    top: 50px; }
+  .legend__right_arrow:before {
+    content: "";
+    position: relative;
+    background-image: url("../../img/slider_left1280.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    top: 50px;
+    left: 50px; }
+  .legend__pagination {
+    display: inline-block;
+    margin-left: 170px;
+    margin-top: 60px;
+    margin-bottom: 15px; }
   .fact {
     height: 300px; }
   .fact__green_line {
@@ -754,19 +1011,37 @@ a.main_screen__button--allphoto :hover {
     left: -25px; }
   .fact__text {
     font-size: 16px;
-    max-width: 315px; } }
+    max-width: 315px; }
+  .seasons {
+    background-color: white;
+    height: 530px; }
+  .seasons__map {
+    flex-schrink: 2;
+    background-size: cover;
+    height: 530px;
+    margin-left: 55px; }
+  .season__description {
+    min-width: 330px;
+    height: 330px;
+    margin-left: 35px;
+    min-width: 330px; }
+  .season__title {
+    font-weight: 300;
+    font-size: 30px;
+    padding-top: 60px;
+    padding-left: 0px;
+    margin-left: 35px; }
+  .season__legend {
+    margin-left: 35px;
+    margin-top: 60px; }
+  .season__comment {
+    font-size: 16px;
+    margin-left: 35px;
+    margin-top: 80px;
+    max-width: 500px;
+    line-height: 2; } }
 
 @media (min-width: 769px) {
-  .main_screen__title {
-    margin-left: 55px;
-    margin-top: 240px;
-    font-size: 50px; }
-  .main_screen__subtitle {
-    position: relative;
-    top: -25px;
-    margin-left: 55px;
-    font-weight: 400;
-    font-size: 20px; }
   .main_screen__sidebar {
     background-color: rgba(28, 21, 49, 0.5);
     display: block;
@@ -776,39 +1051,13 @@ a.main_screen__button--allphoto :hover {
     flex-shrink: 2;
     position: absolute;
     right: 0; }
-  a.main_screen__button--allphoto {
-    text-decoration: none;
-    color: white;
-    display: block;
-    width: 200px;
-    position: relative;
-    left: -80px;
-    margin-top: 230px;
-    webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
-  .legend {
-    background-color: white;
-    display: block;
-    width: 100%;
-    -ms-flex-negative: 2;
-    flex-shrink: 2;
-    height: 545px;
-    margin-top: 20px; }
-  .legend__left_block {
-    min-width: 500px; }
-  .legend__right-block {
-    float: left;
-    background-image: url("../img/legend_bgc1280.png");
-    background-size: cover;
-    width: 570px;
-    height: 545px;
-    margin-right: 55px; }
   .legend__title {
     display: block;
     font-weight: 300;
     font-size: 30px;
     margin-left: 60px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    color: black; }
   .legend__text_block {
     display: -ms-flexbox;
     display: flex;
@@ -822,31 +1071,8 @@ a.main_screen__button--allphoto :hover {
     margin-left: 50px;
     margin-top: 40px;
     line-height: 2;
-    max-width: 500px; }
-  .legend__left_arrow:before {
-    content: "";
-    position: relative;
-    background-image: url("../../img/slider_right1280.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 58px;
-    height: 58px;
-    top: 50px; }
-  .legend__right_arrow:before {
-    content: "";
-    position: relative;
-    background-image: url("../../img/slider_left1280.png");
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 58px;
-    height: 58px;
-    top: 50px;
-    left: 50px; }
-  .legend__pagination {
-    display: inline-block;
-    margin-left: 170px;
-    margin-top: 60px;
-    margin-bottom: 15px; } }
+    max-width: 500px;
+    color: black; } }
 
 @media screen and (max-width: 320px) {
   .header__gamb {
@@ -869,60 +1095,7 @@ a.main_screen__button--allphoto :hover {
     text-decoration: none;
     color: white;
     font-size: 14px; }
-  .main_screen__sidebar {
-    background-color: rgba(28, 21, 49, 0.5);
-    display: block;
-    height: 500px;
-    width: 40px;
-    -ms-flex-negative: 2;
-    flex-shrink: 2;
-    position: absolute;
-    right: 0; }
-  a.main_screen__button--allphoto {
-    text-decoration: none;
-    color: white;
-    display: block;
-    width: 200px;
-    position: relative;
-    left: -80px;
-    margin-top: 150px;
-    webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
   .legend {
-    background-image: url(../img/legend_bgc320.png);
-    background-size: cover;
-    height: 400px;
-    -ms-flex-line-pack: stretch;
-    align-content: stretch;
-    color: white; }
-  .legend__right-block {
-    display: none; }
-  .legend__title {
-    display: block;
-    font-weight: 300;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-top: 40px; }
-  .legend__text_block {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin-top: 30px; }
-  .legend__text {
-    font-weight: 300;
-    font-size: 12px;
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 1.8; }
-  .legend__left_arrow:before {
-    display: none; }
-  .legend__right_arrow:before {
-    display: none; }
-  .legend__pagination {
-    display: inline-block;
-    position: absolute;
-    margin-left: 10px;
-    top: 320px; } }
+    background-image: url(../img/legend_bgc320.png); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -47,12 +47,12 @@ margin-left: 10px;
 margin-top: 170px;
 font-size: 30px;
 
-@media (min-width:  $screen-xs +1px)and (max-width:  $screen-sm) {
+@media (min-width:  $screen-xs) {
 margin-left: 75px;
 margin-top: 240px;
 font-size: 50px;
 }
-@media (min-width:  $screen-sm +1px){
+@media (min-width:  $screen-sm){
 margin-left: 55px;
 margin-top: 240px;
 font-size: 50px;
@@ -65,7 +65,7 @@ margin-left: 10px;
 font-size: 16px;
 
 
-@media (min-width:  $screen-xs +1px) {
+@media (min-width:  $screen-xs) {
 position: relative;
 top: -25px;
 margin-left: 75px;
@@ -73,7 +73,7 @@ font-weight: 400;
 font-size: 20px;
 }
 
-@media (min-width:  $screen-sm +1px){
+@media (min-width:  $screen-sm){
 position: relative;
 top: -25px;
 
@@ -88,12 +88,8 @@ font-size: 20px;
   font-family: 'Jura', sans-serif;
   font-size: 14px;
   z-index: 2;
-  height: 60px;
+  // height: 60px;
   display: block;
-
-
-
-  @media (max-width:  $screen-xs) {
   background-color: rgba(28,21,49,0.5);
   display: block;
   height: 500px;
@@ -102,9 +98,9 @@ font-size: 20px;
   position: absolute;
   right: 0;
 
-  }
 
-  @media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+
+  @media (min-width:  $screen-xs){
   display: none
 
   }
@@ -131,9 +127,6 @@ margin-left: 3px;
 
 a.main_screen__button--allphoto  {
 
-
-
-@media (max-width:  $screen-xs) {
 text-decoration: none;
 color: white;
 display: block;
@@ -147,12 +140,12 @@ webkit-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   // margin-top: 200px;
-}
-@media (min-width:  $screen-xs +1px) and (max-width:  $screen-sm){
+
+@media (min-width:  $screen-xs ) {
 display: none;
 
 }
-@media (min-width:  $screen-sm +1px) {
+@media (min-width:  $screen-sm ) {
 text-decoration: none;
 color: white;
 display: block;

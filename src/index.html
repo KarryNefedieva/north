@@ -15,14 +15,14 @@
 
 <body>
 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 
 
  <header>
 
 <!-- Навигация-->
 
-          <nav class="main_nav">
+          <nav id ="navigation" class="main_nav">
               <div class="header__close"></div>
               <ul class="main_nav__list">
                 <li class="main_nav__item"><a href="#">Легенды</a></li>
@@ -33,10 +33,6 @@
                 <li class="main_nav__item"><a href="#">Контакты</a></li>
               </ul>
           </nav>
-
-
-
-
 
      </div>
   </header>
@@ -120,21 +116,23 @@
 
 
 
-  </section> -->
+  </section>
 <!-- Карта сезонов -->
   <section class="seasons">
     <div class="seasons__map"></div>
-    <div class="seasons__description">
-      <h2 class="season__title"></h2>
+    <div class="season__description">
+      <span class="season__title">Где и когда</span>
       <div class="season__legend">
         <span class="season__legend_clarification--red">летом</span>
         <span class="season__legend_clarification--blue">зимой</span>
         <span class="season__legend_clarification--yellow">весной</span>
         <span class="season__legend_clarification--orange">осенью</span>
       </div>
-      <p class="season__comment">Наблюдать сияние можно в Якутске, Салехарде, Мурманске <br> на Таймыре и на Аляске. Наиболее часто полярное сияние <br> встречается в областях близ Аляски, в Гудзоновом заливе, в <br> Большом Медвежьем оере, Исландии, южной части <br> Гренландии, на севере Норвегии и Сибири.</p>
+      <p class="season__comment">Наблюдать сияние можно в Якутске, Салехарде, Мурманске  на Таймыре и на Аляске. Наиболее часто полярное сияние  встречается в областях близ Аляски, в Гудзоновом заливе, в Большом Медвежьем оере, Исландии, южной части  Гренландии, на севере Норвегии и Сибири.</p>
     </div>
   </section>
+
+
 <!-- Отзывы -->
   <section class="feedback">
   <div class="feedback__container">
