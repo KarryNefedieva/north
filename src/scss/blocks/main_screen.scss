@@ -19,18 +19,27 @@ background-size: cover;
 height: 600px;
 
 background-position:bottom;
-
 }
+
 @media (min-width:  $screen-sm){
 background-size:cover;
 background-position:bottom;
 height: 650px;
-
-
 }
 
 }
 
+.main_screen__gamb{
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+
+
+  @media (min-width:  $screen-xs) {
+  display: none;
+  }
+}
 
 ul{
 margin-top: 105px;

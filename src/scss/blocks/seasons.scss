@@ -86,12 +86,12 @@ top: 220px;
 
 
 @media (min-width:  $screen-xs ) {
-margin-left: 10px;
-margin-top: 40px;
+left: 10px;
+top: 40px;
 }
 @media (min-width:  $screen-sm ) {
-margin-left: 35px;
-margin-top: 60px;
+left: 35px;
+top: 60px;
 }
 }
 
@@ -187,8 +187,8 @@ margin-top: 40px;
 font-size: 16px;
 margin-left: 10px;
 margin-top: 45px;
-max-width: 400px;
-line-height: 2;
+// max-width: 300px;
+line-height: 1.5;
 }
 @media (min-width:  $screen-sm ) {
 font-size: 16px;

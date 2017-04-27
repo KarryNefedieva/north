@@ -372,9 +372,6 @@ template {
 [hidden] {
   display: none; }
 
-.green {
-  border: 1px solid blue; }
-
 .main_nav {
   z-index: 2;
   display: -ms-flexbox;
@@ -396,13 +393,13 @@ template {
   position: absolute;
   top: -105px; }
 
-.header__close:before {
-  content: '';
-  background-image: url(../../img/header_close.png);
-  background-repeat: no-repeat;
+.main_nav__close {
   position: absolute;
-  top: -10px;
-  display: block; }
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 3; }
 
 .main_nav__item {
   list-style-type: none;
@@ -430,6 +427,12 @@ template {
       flex-direction: column;
   height: 500px;
   background-size: cover; }
+
+.main_screen__gamb {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px; }
 
 ul {
   margin-top: 105px;
@@ -738,9 +741,13 @@ a.main_screen__button--allphoto :hover {
     z-index: 3;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+  .main_nav__close {
+    display: none; }
   .main_screen {
     height: 600px;
     background-position: bottom; }
+  .main_screen__gamb {
+    display: none; }
   .main_screen__title {
     margin-left: 75px;
     margin-top: 240px;
@@ -762,7 +769,8 @@ a.main_screen__button--allphoto :hover {
     -ms-flex-negative: 2;
     flex-shrink: 2;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    height: 100%; }
   .legend__right-block {
     display: -ms-flexbox;
     display: flex;
@@ -798,7 +806,7 @@ a.main_screen__button--allphoto :hover {
     margin-top: 60px;
     margin-bottom: 15px; }
   .fact {
-    height: 182px; }
+    height: 100%; }
   .fact__green_line {
     height: 1px;
     width: 92%;
@@ -843,8 +851,8 @@ a.main_screen__button--allphoto :hover {
     padding-left: 0px;
     margin-left: 10px; }
   .season__legend {
-    margin-left: 10px;
-    margin-top: 40px; }
+    left: 10px;
+    top: 40px; }
   .season__legend_clarification--red {
     font-size: 16px;
     margin-right: 50px; }
@@ -861,12 +869,9 @@ a.main_screen__button--allphoto :hover {
     font-size: 16px;
     margin-left: 10px;
     margin-top: 45px;
-    max-width: 400px;
-    line-height: 2; } }
+    line-height: 1.5; } }
 
 @media (min-width: 321px) {
-  .header__gamb {
-    display: none; }
   .main_nav__item a {
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1032,8 +1037,8 @@ a.main_screen__button--allphoto :hover {
     padding-left: 0px;
     margin-left: 35px; }
   .season__legend {
-    margin-left: 35px;
-    margin-top: 60px; }
+    left: 35px;
+    top: 60px; }
   .season__comment {
     font-size: 16px;
     margin-left: 35px;
@@ -1074,14 +1079,12 @@ a.main_screen__button--allphoto :hover {
     max-width: 500px;
     color: black; } }
 
-@media screen and (max-width: 320px) {
-  .header__gamb {
-    height: 40px;
-    width: 40px;
-    margin-top: 10px;
-    margin-left: 10px; } }
-
 @media (max-width: 320px) {
+  .close {
+    display: none; }
+  .open {
+    display: -ms-flexbox;
+    display: flex; }
   .main_nav__item {
     margin-top: 20px; }
   .main_nav__item:first-child {
