@@ -1,0 +1,147 @@
+.contacts{
+background-image: url("../img/cont_bgc.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+
+width: 100%;
+height: 500px;
+color: white;
+font-family: $Ubuntu;
+font-size: 14px;
+
+
+@media (min-width:  $screen-xs ) {
+font-size: 14px;
+height: 100%;
+}
+@media (min-width:  $screen-lg ) {
+height: 500px;
+font-size: 16px;
+
+}
+}
+
+.contacts__title{
+padding-top: 45px;
+font-family: $Jura;
+font-size: 20px;
+display: block;
+margin-left: 10px;
+
+@media (min-width:  $screen-xs ) {
+padding-top: 50px;
+
+
+}
+@media (min-width:  $screen-sm ) {
+padding-top: 65px;
+font-size: 30px;
+  margin-left: 55px;
+}
+}
+
+.contacts__container{
+display: flex;
+margin-left: 10px;
+margin-right: 10px;
+flex-wrap:wrap;
+margin-top: 65px;
+
+
+@media (min-width:  $screen-xs ) {
+margin-right: 15px;
+margin-bottom: 50px;
+margin-top: 0px;
+
+flex-wrap:wrap;
+justify-content: space-between;
+
+ }
+@media (min-width:  $screen-sm ) {
+margin-left: 55px;
+margin-right: 55px;
+margin-bottom: 50px;
+margin-top: 0px;
+
+flex-row:row;
+justify-content: space-between;
+}
+}
+
+.contacts__filial{
+display: inline-block;
+min-width: 180px;
+
+@media (min-width:  $screen-xs ) {
+margin-right: 20px;
+margin-top: 65px;
+
+}
+@media (min-width:  $screen-sm ) {
+margin-top: 80px;
+
+}
+}
+
+.contacts_filial_info{
+@media (max-width:  $screen-xs ) {
+  display: none;
+}
+}
+.modal__filial{
+  width: 320px;
+  height: 220px;
+  background-color: white;
+}
+.contacts__filial_name{
+display: block;
+margin-left: 20px;
+line-height: 2;
+}
+
+.contacts__filial_name_fin{
+display: block;
+margin-left: 20px;
+line-height: 2;
+}
+.contacts__filial_name:before{
+content: '';
+display: inline-block;
+
+height: 10px;
+width: 10px;
+background-color: #89c1a1;
+position: relative;
+left: -20px;
+
+}
+.contacts__filial_manager{
+margin-top: 30px;
+display: block
+}
+.contacts__filial_telephone{
+display: block;
+margin-top: 55px;
+}
+.contacts__filial_vklink{
+margin-top: 25px;
+display: block
+}
+.contacts__filial_email{
+margin-top: 25px;
+display: block
+}
+
+a.contacts__filial_telephone{
+text-decoration: none;
+color: white;
+}
+a.contacts__filial_vklink{
+text-decoration: none;
+color: white;
+}
+a.contacts__filial_email{
+text-decoration: none;
+color: white;
+}

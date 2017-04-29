@@ -19,7 +19,7 @@ height: 300px;
 
   position: absolute;
   width: 2px;
-  height: 235px;
+  height: 225px;
   margin-top: 50px;
   margin-left: 5px;
 
@@ -143,10 +143,12 @@ margin-left: 25px;
 @media (min-width:  $screen-xs ){
 font-size: 12px;
 max-width:215px;
+margin-left: 0px;
 }
 @media (min-width:  $screen-sm) {
 font-size: 16px;
 max-width: 315px;
+margin-left: 0px;
 }
 }
 

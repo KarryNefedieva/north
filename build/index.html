@@ -17,16 +17,26 @@
   <link rel="stylesheet" type="text/css" href="scss/style.css">
   <link href="https://fonts.googleapis.com/css?family=Jura|Ubuntu:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
 
-  <title>Северное сияние</title>
+<title>Северное сияние</title>
 
 </head>
 
 <body>
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-<script src="js/script.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="js/script.min.js"></script>
 
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+<script>
+  $('.single-slide').slick({
+  });
+</script>
 
  <header>
 
@@ -141,107 +151,137 @@
         <span class="season__legend_clarification--orange">осенью</span>
       </div>
       <p class="season__comment">Наблюдать сияние можно в Якутске, Салехарде, Мурманске  на Таймыре и на Аляске. Наиболее часто полярное сияние  встречается в областях близ Аляски, в Гудзоновом заливе, в Большом Медвежьем озере, Исландии, южной части  Гренландии, на севере Норвегии и Сибири.</p>
+      <div class="seasons__mobile_map"></div>
     </div>
   </section>
 
 
 <!-- Отзывы -->
   <section class="feedback">
-  <div class="feedback__container">
-      <h2 class="feedback__title">Отзывы</h2>
 
-      <div class="feedback__review">
-        <img src="#" alt="Фото автора отзыва" class="feedback__review_photo">
-        <span class="feedback__review_author">Игорь, о Финляндии</span>
-        <div class="feedback__review_bubble">
-          <p class="feedback__review_text">В зависимости от преобладающих в <br> спектре полярного сияния линий <br>излучения полярные сияния делятся<br> на два типа: высотные полярные<br> слияния типа А с преобладанием<br> атомарных линий и полярные<br> сияния типа В</p>
+      <span class="feedback__title">Отзывы</span>
+    <div class="feedback__review">
+      <div class="feedback__author">
+        <img src="../img/author.jpg" class="feedback__author_photo"/>
+        <span class="feedback__author_name">Игорь, <br> о Финляндии</span>
+      </div>
+        <div class="feedback__bubble">В зависимости от преобладающих в  спектре полярного сияния линий излучения полярные сияния делятся на два типа: высотные полярные слияния типа А с преобладанием атомарных линий и полярные сияния типа В</p>
         </div>
       </div>
 
-      <div class="feedback__review review">
+<div style="clear:both"></div>
+
+
+      <!-- <div class="feedback__review">
         <img src="#" alt="Фото автора отзыва" class="review__photo">
         <span class="feedback__review_author">Ярослав, о Якутии</span>
         <div class="feedback__review_bubble">
           <p class="feedback__review_text">В зависимости от преобладающих в <br> спектре полярного сияния линий <br>излучения полярные сияния делятся<br> на два типа: высотные полярные<br> слияния типа А с преобладанием<br> атомарных линий и полярные<br> сияния типа В</p>
         </div>
-      </div>
+      </div> -->
 
-      <div class="feedback_pagination">
+      <!-- <div class="feedback_pagination">
         <div class="feedback_pagination__item--active"></div>
         <div class="feedback_pagination__item"></div>
         <div class="feedback_pagination__item"></div>
         <div class="feedback_pagination__item"></div>
         <div class="feedback_pagination__item"></div>
-      </div>
-    </div>
+      </div> -->
+
   </section>
+
+
+
+
+<!-- <div class="single-slide">
+  <div>Слайд1</div>
+        <div>Слайд2</div>
+        <div>Слайд3</div>
+</div> -->
+
 <!-- Контакты -->
   <section class="contacts">
-    <div class="contacts__container">
-      <h2 class="contacts__title">Контакты</h2>
+
+      <span class="contacts__title">Контакты</span>
+      <div class="contacts__container">
+
       <div class="contacts__filial">
-        <span class="contacts__filial_name">Финляндия</span>
-        <span class="contacts__filial_manager">Менеджер направления: Артем Ливанов</span>
-        <span class="contacts__filial_telephone"><a href="#">+7(812)67-67-00</a></span>
-        <span class="contacts__filial_vklink"><a href="#">vk.com/muravei35</a></span>
-        <span class="contacts__filial_email"><a href="#">example@mail.com</a></span>
+        <span class="contacts__filial_name_fin">Финляндия</span>
+        <div id="modal_finland" class="contacts_filial_info">
+        <span class="contacts__filial_manager">Менеджер направления: <br>Артем Ливанов</span>
+        <a href="#" class="contacts__filial_telephone">+7(812)67-67-00</a>
+        <a href="#" class="contacts__filial_vklink">vk.com/muravei35</a>
+        <a href="#" class="contacts__filial_email">example@mail.com</a>
+        </div>
       </div>
 
         <div class="contacts__filial">
         <span class="contacts__filial_name">Норвегия</span>
-        <span class="contacts__filial_manager">Менеджер направления: Артем Ливанов</span>
-        <span class="contacts__filial_telephone"><a href="#">+7(812)67-67-00</a></span>
-        <span class="contacts__filial_vklink"><a href="#">vk.com/muravei35</a></span>
-        <span class="contacts__filial_email"><a href="#">example@mail.com</a></span>
+        <div class="contacts_filial_info">
+        <span class="contacts__filial_manager">Менеджер направления: <br>Артем Ливанов</span>
+        <a href="#" class="contacts__filial_telephone">+7(812)67-67-00</a>
+        <a href="#" class="contacts__filial_vklink">vk.com/muravei35</a>
+        <a href="#" class="contacts__filial_email">example@mail.com</a>
       </div>
+       </div>
 
         <div class="contacts__filial">
         <span class="contacts__filial_name">Якутия</span>
-        <span class="contacts__filial_manager">Менеджер направления: Артем Ливанов</span>
-        <span class="contacts__filial_telephone"><a href="#">+7(812)67-67-00</a></span>
-        <span class="contacts__filial_vklink"><a href="#">vk.com/muravei35</a></span>
-        <span class="contacts__filial_email"><a href="#">example@mail.com</a></span>
+       <div class="contacts_filial_info">
+        <span class="contacts__filial_manager">Менеджер направления: <br>Артем Ливанов</span>
+        <a href="#" class="contacts__filial_telephone">+7(812)67-67-00</a>
+        <a href="#" class="contacts__filial_vklink">vk.com/muravei35</a>
+        <a href="#" class="contacts__filial_email">example@mail.com</a>
       </div>
+       </div>
 
         <div class="contacts__filial">
         <span class="contacts__filial_name">Аляска</span>
-        <span class="contacts__filial_manager">Менеджер направления: Артем Ливанов</span>
-        <span class="contacts__filial_telephone"><a href="#">+7(812)67-67-00</a></span>
-        <span class="contacts__filial_vklink"><a href="#">vk.com/muravei35</a></span>
-        <span class="contacts__filial_email"><a href="#">example@mail.com</a></span>
+        <div class="contacts_filial_info">
+        <span class="contacts__filial_manager">Менеджер направления:<br> Артем Ливанов</span>
+        <a href="#" class="contacts__filial_telephone">+7(812)67-67-00</a>
+        <a href="#" class="contacts__filial_vklink">vk.com/muravei35</a>
+        <a href="#" class="contacts__filial_email">example@mail.com</a>
       </div>
+       </div>
 
         <div class="contacts__filial">
         <span class="contacts__filial_name">Исландия</span>
-        <span class="contacts__filial_manager">Менеджер направления: Артем Ливанов</span>
-        <span class="contacts__filial_telephone"><a href="#">+7(812)67-67-00</a></span>
-        <span class="contacts__filial_vklink"><a href="#">vk.com/muravei35</a></span>
-        <span class="contacts__filial_email"><a href="#">example@mail.com</a></span>
+        <div class="contacts_filial_info">
+        <span class="contacts__filial_manager">Менеджер направления:<br> Артем Ливанов</span>
+        <a href="#" class="contacts__filial_telephone">+7(812)67-67-00</a>
+        <a href="#" class="contacts__filial_vklink">vk.com/muravei35</a>
+        <a href="#" class="contacts__filial_email">example@mail.com</a>
       </div>
+       </div>
 
         <div class="contacts__filial">
         <span class="contacts__filial_name">Мурманск</span>
-        <span class="contacts__filial_manager">Менеджер направления: Артем Ливанов</span>
-        <span class="contacts__filial_telephone"><a href="#">+7(812)67-67-00</a></span>
-        <span class="contacts__filial_vklink"><a href="#">vk.com/muravei35</a></span>
-        <span class="contacts__filial_email"><a href="#">example@mail.com</a></span>
+       <div class="contacts_filial_info">
+        <span class="contacts__filial_manager">Менеджер направления: <br>Артем Ливанов</span>
+     <a href="#" class="contacts__filial_telephone">+7(812)67-67-00</a>
+        <a href="#" class="contacts__filial_vklink">vk.com/muravei35</a>
+        <a href="#" class="contacts__filial_email">example@mail.com</a>
       </div>
+       </div>
     </div>
+     <div style="clear: both"></div>
+
   </section>
 <!-- Цены -->
   <section class="price">
     <div class="price__container">
-      <h2 class="price__title">Цены</h2>
-      <nav class="price__categories">
+      <span class="price__title">Цены</span>
+      <div class="price__categories">
         <ul>
-          <li class="price__categories_item--active">Финляндия</li>
+          <li class="price__categories_item">Финляндия</li>
           <li class="price__categories_item">Норвегия</li>
           <li class="price__categories_item">Якутия</li>
           <li class="price__categories_item">Аляска</li>
           <li class="price__categories_item">Исландия</li>
           <li class="price__categories_item">Мурманск</li>
         </ul>
-      </nav>
+      </div>
 
       <table class="price__list">
         <tr>
@@ -260,14 +300,14 @@
           <td>250 000 руб/чел</td>
         </tr>
       </table>
-      <span class="price__full_list">Посмотреть все предложения по Финляндии</span>
+      <a href="#" class="price__full_list">Посмотреть все предложения по Финляндии</a>
     </div>
   </section>
 </main>
 
   <footer>
-<!-- Подвал -->
-<span class="footer__info">Телефон для справок: +7(921)123-15-67</span>
+
+ <span class="footer__info">Телефон для справок: +7(921)123-15-67</span>
   </footer>
 
 </body>

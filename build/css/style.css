@@ -434,7 +434,7 @@ template {
   margin-top: 10px;
   margin-left: 10px; }
 
-ul {
+ul.main_nav__list {
   margin-top: 105px;
   margin-left: 10px;
   -webkit-padding-start: 0px; }
@@ -536,7 +536,6 @@ a.main_screen__button--allphoto :hover {
 
 .legend__pagination {
   display: inline-block;
-  position: absolute;
   margin-left: 10px;
   top: 320px; }
 
@@ -563,7 +562,7 @@ a.main_screen__button--allphoto :hover {
   background-color: #03eaa5;
   position: absolute;
   width: 2px;
-  height: 235px;
+  height: 225px;
   margin-top: 50px;
   margin-left: 5px; }
 
@@ -624,13 +623,18 @@ a.main_screen__button--allphoto :hover {
       flex-direction: row; }
 
 .seasons__map {
+  display: none; }
+
+.seasons__mobile_map {
   background-image: url(../img/map.jpg);
   background-size: cover;
-  background-color: red;
-  height: 350px; }
+  height: 230px;
+  width: 100%;
+  margin-top: 60px; }
 
 .season__description {
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 0; }
 
 .season__title {
   font-family: "Jura", sans-serif;
@@ -642,11 +646,13 @@ a.main_screen__button--allphoto :hover {
 
 .season__legend {
   position: relative;
-  top: 220px; }
+  top: 180px;
+  left: 10px;
+  max-width: 250px; }
 
 .season__legend_clarification--red {
-  margin-left: 20px;
-  margin-right: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
   font-style: "Jura", sans-serif;
   font-size: 10px; }
 
@@ -660,7 +666,7 @@ a.main_screen__button--allphoto :hover {
   left: -10px; }
 
 .season__legend_clarification--blue {
-  margin-right: 20px;
+  margin-right: 15px;
   font-style: "Jura", sans-serif;
   font-size: 10px; }
 
@@ -674,7 +680,7 @@ a.main_screen__button--allphoto :hover {
   left: -10px; }
 
 .season__legend_clarification--yellow {
-  margin-right: 20px;
+  margin-right: 15px;
   font-style: "Jura", sans-serif;
   font-size: 10px; }
 
@@ -703,8 +709,233 @@ a.main_screen__button--allphoto :hover {
 .season__comment {
   line-height: 1.5;
   font-size: 12px;
+  margin-left: 10px; }
+
+.feedback {
+  background-color: #b2dad0;
+  height: 250px; }
+
+.feedback__title {
+  padding-top: 35px;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  display: block;
+  margin-left: 10px; }
+
+.feedback__review {
+  margin-left: 10px; }
+
+.feedback__author {
+  margin-top: 35px;
+  float: left; }
+
+.feedback__author_photo {
+  height: 60px;
+  width: 60px;
+  display: block; }
+
+.feedback__author_name {
+  margin-top: 15px;
+  line-height: 1.5;
+  display: block;
+  font-size: 10px;
+  font-family: "Ubuntu", sans-serif; }
+
+.feedback__bubble {
+  width: 180px;
+  padding: 20px 10px 20px 10px;
+  margin-top: 35px;
+  margin-left: 30px;
+  height: 140px;
+  background-color: white;
+  float: left;
+  font-size: 10px;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.3; }
+
+.feedback__bubble:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid white;
+  border-left: 25px solid transparent;
+  position: relative;
+  left: -35px;
+  top: -20px; }
+
+.contacts {
+  background-image: url("../img/cont_bgc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px; }
+
+.contacts__title {
+  padding-top: 45px;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  display: block;
+  margin-left: 10px; }
+
+.contacts__container {
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 10px;
-  margin-top: 40px; }
+  margin-right: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 65px; }
+
+.contacts__filial {
+  display: inline-block;
+  min-width: 180px; }
+
+.modal__filial {
+  width: 320px;
+  height: 220px;
+  background-color: white; }
+
+.contacts__filial_name {
+  display: block;
+  margin-left: 20px;
+  line-height: 2; }
+
+.contacts__filial_name_fin {
+  display: block;
+  margin-left: 20px;
+  line-height: 2; }
+
+.contacts__filial_name:before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background-color: #89c1a1;
+  position: relative;
+  left: -20px; }
+
+.contacts__filial_manager {
+  margin-top: 30px;
+  display: block; }
+
+.contacts__filial_telephone {
+  display: block;
+  margin-top: 55px; }
+
+.contacts__filial_vklink {
+  margin-top: 25px;
+  display: block; }
+
+.contacts__filial_email {
+  margin-top: 25px;
+  display: block; }
+
+a.contacts__filial_telephone {
+  text-decoration: none;
+  color: white; }
+
+a.contacts__filial_vklink {
+  text-decoration: none;
+  color: white; }
+
+a.contacts__filial_email {
+  text-decoration: none;
+  color: white; }
+
+ul {
+  padding-left: 55px; }
+
+.price__title {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  display: block;
+  padding-top: 30px;
+  margin-left: 10px; }
+
+.price__categories {
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Jura", sans-serif;
+  flex-row: row;
+  font-size: 10px;
+  margin-right: 15px;
+  margin-top: 35px;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+li.price__categories_item {
+  display: inline-block;
+  margin-right: 70px;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.price__categories_item:after {
+  content: '';
+  display: inline-block;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  margin-left: 15px; }
+
+.price__list {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 10px;
+  border-collapse: collapse;
+  margin-left: 10px;
+  margin-top: 20px; }
+
+tr {
+  height: 40px; }
+
+th {
+  border: 1px solid #d0d0d0; }
+
+td {
+  border: 1px solid #d0d0d0; }
+
+a.price__full_list {
+  display: block;
+  margin-top: 30px;
+  font-size: 10px;
+  font-family: "Ubuntu", sans-serif;
+  margin-left: 10px; }
+
+footer {
+  display: none; }
+
+.footer__info {
+  display: block;
+  margin-right: 55px;
+  padding-top: 20px;
+  text-align: right; }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.slider {
+  width: 50%;
+  margin: 100px auto; }
+
+.slick-slide {
+  margin: 0px 20px; }
+
+.slick-slide img {
+  width: 100%; }
+
+.slick-prev:before,
+.slick-next:before {
+  color: black; }
 
 @font-face {
   font-family: 'font0475c723a666a5c519583942afd84bcc';
@@ -803,7 +1034,7 @@ a.main_screen__button--allphoto :hover {
   .legend__pagination {
     display: inline-block;
     margin-left: 80px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 15px; }
   .fact {
     height: 100%; }
@@ -832,18 +1063,24 @@ a.main_screen__button--allphoto :hover {
     left: 20px; }
   .fact__text {
     font-size: 12px;
-    max-width: 215px; }
+    max-width: 215px;
+    margin-left: 0px; }
   .seasons {
     background-color: #eaeaec;
     height: 330px; }
   .seasons__map {
-    flex-schrink: 2;
+    display: block;
+    background-image: url(../img/map.jpg);
+    flex-schrink: 1;
     background-size: cover;
     height: 330px;
     margin-left: 10px;
-    width: 50%; }
+    width: 50%;
+    min-width: 50px; }
+  .seasons__mobile_map {
+    display: none; }
   .season__description {
-    min-width: 450px; }
+    min-width: 250px; }
   .season__title {
     font-weight: 300;
     font-size: 20px;
@@ -852,24 +1089,78 @@ a.main_screen__button--allphoto :hover {
     margin-left: 10px; }
   .season__legend {
     left: 10px;
-    top: 40px; }
+    top: 40px;
+    min-width: 150px; }
   .season__legend_clarification--red {
-    font-size: 16px;
-    margin-right: 50px; }
+    font-size: 10px; }
   .season__legend_clarification--blue {
-    font-size: 16px;
-    margin-right: 50px; }
+    font-size: 10px; }
   .season__legend_clarification--yellow {
-    font-size: 16px;
-    margin-right: 50px; }
+    font-size: 10px; }
   .season__legend_clarification--orange {
-    font-size: 16px;
-    margin-right: 50px; }
+    font-size: 10px; }
   .season__comment {
-    font-size: 16px;
+    font-size: 12px;
     margin-left: 10px;
     margin-top: 45px;
-    line-height: 1.5; } }
+    max-width: 300px;
+    line-height: 1.5; }
+  .feedback {
+    height: 270px; }
+  .feedback__title {
+    font-size: 30px;
+    margin-left: 10px; }
+  .feedback__review {
+    margin-left: 10px; }
+  .feedback__author_photo {
+    height: 80px;
+    width: 85px; }
+  .feedback__bubble {
+    padding: 20px 10px 20px 10px;
+    width: 160px;
+    height: 140px;
+    margin-left: 40px; }
+  .feedback__bubble:before {
+    border-top: 15px solid white;
+    border-left: 25px solid transparent;
+    left: -30px;
+    top: -20px; }
+  .contacts {
+    font-size: 14px;
+    height: 100%; }
+  .contacts__title {
+    padding-top: 50px; }
+  .contacts__container {
+    margin-right: 15px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .contacts__filial {
+    margin-right: 20px;
+    margin-top: 65px; }
+  .price {
+    height: 100%; }
+  .price__title {
+    padding-top: 35px; }
+  .price__categories {
+    font-size: 12px; }
+  .price__list {
+    width: 450px;
+    margin-top: 30px; }
+  a.price__full_list {
+    font-size: 16px;
+    margin-bottom: 50px; }
+  footer {
+    display: block;
+    height: 55px;
+    background-color: #201b38;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    width: 100%; } }
 
 @media (min-width: 321px) {
   .main_nav__item a {
@@ -957,7 +1248,8 @@ a.main_screen__button--allphoto :hover {
     height: 545px;
     margin-top: 20px; }
   .legend__left_block {
-    min-width: 500px; }
+    min-width: 500px;
+    height: 100%; }
   .legend__right-block {
     display: -ms-flexbox;
     display: flex;
@@ -990,7 +1282,7 @@ a.main_screen__button--allphoto :hover {
   .legend__pagination {
     display: inline-block;
     margin-left: 170px;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 15px; }
   .fact {
     height: 300px; }
@@ -1016,12 +1308,15 @@ a.main_screen__button--allphoto :hover {
     left: -25px; }
   .fact__text {
     font-size: 16px;
-    max-width: 315px; }
+    max-width: 315px;
+    margin-left: 0px; }
   .seasons {
     background-color: white;
     height: 530px; }
   .seasons__map {
-    flex-schrink: 2;
+    display: block;
+    background-image: url(../img/map.jpg);
+    flex-schrink: 1;
     background-size: cover;
     height: 530px;
     margin-left: 55px; }
@@ -1029,7 +1324,7 @@ a.main_screen__button--allphoto :hover {
     min-width: 330px;
     height: 330px;
     margin-left: 35px;
-    min-width: 330px; }
+    min-width: 200px; }
   .season__title {
     font-weight: 300;
     font-size: 30px;
@@ -1038,13 +1333,91 @@ a.main_screen__button--allphoto :hover {
     margin-left: 35px; }
   .season__legend {
     left: 35px;
-    top: 60px; }
+    top: 60px;
+    min-width: 350px; }
+  .season__legend_clarification--red {
+    font-size: 16px;
+    margin-right: 40px; }
+  .season__legend_clarification--blue {
+    font-size: 16px;
+    margin-right: 40px; }
+  .season__legend_clarification--yellow {
+    font-size: 16px;
+    margin-right: 40px; }
+  .season__legend_clarification--orange {
+    font-size: 16px;
+    margin-right: 40px; }
   .season__comment {
     font-size: 16px;
     margin-left: 35px;
     margin-top: 80px;
-    max-width: 500px;
-    line-height: 2; } }
+    line-height: 2; }
+  .feedback {
+    height: 450px; }
+  .feedback__title {
+    padding-top: 75px;
+    margin-left: 55px;
+    margin-right: 55px; }
+  .feedback__review {
+    margin-left: 55px;
+    margin-right: 55px; }
+  .feedback__author_photo {
+    height: 150px;
+    width: 170px; }
+  .feedback__author_name {
+    font-size: 16px; }
+  .feedback__bubble {
+    width: 340px;
+    font-size: 16px;
+    padding: 30px 30px 30px 30px;
+    height: 220px;
+    margin-left: 70px; }
+  .feedback__bubble:before {
+    border-top: 30px solid white;
+    border-left: 45px solid transparent;
+    left: -75px;
+    top: -30px; }
+  .contacts__title {
+    padding-top: 65px;
+    font-size: 30px;
+    margin-left: 55px; }
+  .contacts__container {
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    flex-row: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .contacts__filial {
+    margin-top: 80px; }
+  .price {
+    height: 535px; }
+  .price__title {
+    font-size: 36px;
+    padding-top: 90px;
+    margin-left: 55px; }
+  .price__categories {
+    font-size: 20px;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .price__list {
+    width: 770px;
+    font-size: 16px;
+    margin-left: 55px;
+    margin-top: 30px; }
+  a.price__full_list {
+    font-size: 16px;
+    margin-left: 55px;
+    margin-bottom: 80px; }
+  footer {
+    display: block;
+    height: 55px;
+    background-color: #201b38;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    width: 100%; } }
 
 @media (min-width: 769px) {
   .main_screen__sidebar {
@@ -1079,6 +1452,11 @@ a.main_screen__button--allphoto :hover {
     max-width: 500px;
     color: black; } }
 
+@media (min-width: 1200px) {
+  .contacts {
+    height: 500px;
+    font-size: 16px; } }
+
 @media (max-width: 320px) {
   .close {
     display: none; }
@@ -1099,6 +1477,8 @@ a.main_screen__button--allphoto :hover {
     color: white;
     font-size: 14px; }
   .legend {
-    background-image: url(../img/legend_bgc320.png); } }
+    background-image: url(../img/legend_bgc320.png); }
+  .contacts_filial_info {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

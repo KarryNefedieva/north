@@ -13,8 +13,7 @@ background-image: url(../img/legend_bgc320.png);
 
   background-color: rgb(234,234,236);
   display: block;
-  // height: 345px;
-  width: 100%;
+   width: 100%;
   flex-shrink: 2;
  flex-wrap: wrap;
  height: 100%;
@@ -46,6 +45,7 @@ flex-grow:2;
 
 @media (min-width:  $screen-sm) {
 min-width: 500px;
+height: 100%;
   }
 }
 
@@ -229,20 +229,20 @@ left: 50px;
 .legend__pagination{
 
 display: inline-block;
-position: absolute;
+// position: absolute;
 margin-left: 10px;
 top: 320px;
 
 @media (min-width:  $screen-xs ) {
 display: inline-block;
 margin-left: 80px;
-margin-top: 60px;
+margin-top: 30px;
 margin-bottom: 15px;
 }
 @media (min-width:  $screen-sm) {
 display: inline-block;
 margin-left: 170px;
-margin-top: 60px;
+margin-top: 30px;
 margin-bottom: 15px;
 }
 
