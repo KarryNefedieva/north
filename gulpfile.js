@@ -167,7 +167,8 @@ gulp.task('js', function () {
       dirs.source + '/js/jquery-3.1.0.min.js',
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/owl.carousel.min.js',
-      dirs.source + '/js/script.js',
+      dirs.source + '/js/slick.js',
+      dirs.source + '/js/script.js'
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))
@@ -265,6 +266,7 @@ function fileExist(path) {
 }
 
 var onError = function(err) {
+  console.log(err);
     notify.onError({
       title: "Error in " + err.plugin,
     })(err);

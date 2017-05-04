@@ -17,8 +17,8 @@
   <link rel="stylesheet" type="text/css" href="scss/style.css">
   <link href="https://fonts.googleapis.com/css?family=Jura|Ubuntu:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="scss/slick.css"/>
+<link rel="stylesheet" type="text/css" href="scss/slick-theme.css"/> -->
 
 
 <title>Северное сияние</title>
@@ -26,32 +26,24 @@
 </head>
 
 <body>
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-  <script src="js/script.min.js"></script>
+<!--   <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
+<script src="js/script.min.js"></script>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-
-<script>
-  $('.single-slide').slick({
-  });
-</script>
 
  <header>
 
 <!-- Навигация-->
- <div class="main_block close">
+    <div class="main_block close">
       <img src="img/header_close.png" alt="" class="main_nav__close"/>
           <nav id ="navigation" class="main_nav">
 
               <ul class="main_nav__list">
-                <li class="main_nav__item"><a href="#">Легенды</a></li>
-                <li class="main_nav__item"><a href="#">Факты</a></li>
-                <li class="main_nav__item"><a href="#">Где и когда</a></li>
-                <li class="main_nav__item"><a href="#">Цены на отели</a></li>
-                <li class="main_nav__item"><a href="#">Отзывы</a></li>
-                <li class="main_nav__item"><a href="#">Контакты</a></li>
+                <li class="main_nav__item"><a href="index.html#legend_block">Легенды</a></li>
+                <li class="main_nav__item"><a href="index.html#fact_block">Факты</a></li>
+                <li class="main_nav__item"><a href="index.html#seasons_block">Где и когда</a></li>
+                <li class="main_nav__item"><a href="index.html#price_block">Цены на отели</a></li>
+                <li class="main_nav__item"><a href="index.html#feedback_block">Отзывы</a></li>
+                <li class="main_nav__item"><a href="index.html#contacts_block">Контакты</a></li>
               </ul>
           </nav>
 
@@ -62,40 +54,36 @@
 <!-- Первый экран -->
 <main>
   <section class="main_screen">
-  <img src="img/header_menu.png" alt="" class="main_screen__gamb">
-
-    <h1 class="main_screen__title">Северное сияние</h1>
-    <strong class="main_screen__subtitle">Факты, легенды и места обитания</strong>
+    <div class="main_screen__container">
+      <img src="img/header_menu.png" alt="" class="main_screen__gamb">
+      <h1 class="main_screen__title">Северное сияние</h1>
+      <strong class="main_screen__subtitle">Факты, легенды и места обитания</strong>
+    </div>
 
     <div class="main_screen__sidebar">
-      <a href="#" class="main_screen__button--vk">
-        <img src="img/header_vk.png" alt="vk" class="main_screen__button--vk">
-      </a>
-      <a href="#" class="main_screen__button--allphoto">Больше фотографий</a>
+        <a href="#" class="main_screen__button--vk">
+          <img src="img/header_vk.png" alt="vk" class="main_screen__button--vk">
+        </a>
+        <a href="#" class="main_screen__button--allphoto">Больше фотографий</a>
     </div>
 
   </section>
 
 <!-- Второй экран:слайдер -->
-  <section class="legend">
+  <section id="legend_block" class="legend">
     <div class="legend__container">
 
       <div class="legend__left_block">
         <span class="legend__title">Легенды народов севера <br> о полярном сиянии</span>
 
-        <div class="legend__text_block">
-          <a href="" class="legend__left_arrow"></a>
-          <p class="legend__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами</p>
-          <a href="" class="legend__right_arrow"></a>
-        </div>
+        <div id="your-class" class="legend__text_block">
 
+          <div class="legend__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами</div>
+          <div class="legend__text">ddd</div>
+          <div class="legend__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами</div>
+          <div class="legend__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами</div>
+          <div class="legend__text">Племена индейцев, жителей северной Америки, считают, что северное сияние – это свет фонарей, которые используют духи для поисков душ погибших охотников. Другие племена называют это явление светом огней, вызываемым всемогущими северными шаманами</div>
 
-        <div class="legend__pagination">
-          <div class="legend__pagination_item--active"></div>
-          <div class="legend__pagination_item"></div>
-          <div class="legend__pagination_item"></div>
-          <div class="legend__pagination_item"></div>
-          <div class="legend__pagination_item"></div>
         </div>
 
       </div>
@@ -104,8 +92,9 @@
     </div>
   </section>
 
+
 <!-- Факты -->
-  <section class="fact">
+  <section id="fact_block" class="fact">
 
       <span class="fact__title">Факты о северном сиянии</span>
   <div class="fact__stage_blocks">
@@ -129,18 +118,13 @@
       </div>
     </div>
     </div>
-        <!-- <div class="fact-section__row">
-         <!--  <ul class="fact__list">
-            <ol class="fact_list__item">Наблюдаются преимущественно в высоких широтах обоих полушариях</ol>
-            <ol class="fact_list__item">Спектр полярных сияний меняется с высотой.</ol>
-            <ol class="fact_list__item">Полярные сияния весной и осенью возникают заметно чаще, чем зимой и летом.</ol>
-          </ul> -->
 
 
 
   </section>
 <!-- Карта сезонов -->
-  <section class="seasons">
+  <section id="seasons_block" class="seasons">
+
     <div class="seasons__map"></div>
     <div class="season__description">
       <span class="season__title">Где и когда</span>
@@ -153,65 +137,78 @@
       <p class="season__comment">Наблюдать сияние можно в Якутске, Салехарде, Мурманске  на Таймыре и на Аляске. Наиболее часто полярное сияние  встречается в областях близ Аляски, в Гудзоновом заливе, в Большом Медвежьем озере, Исландии, южной части  Гренландии, на севере Норвегии и Сибири.</p>
       <div class="seasons__mobile_map"></div>
     </div>
+
   </section>
 
 
 <!-- Отзывы -->
-  <section class="feedback">
+  <section id="feedback_block" class="feedback">
 
-      <span class="feedback__title">Отзывы</span>
-    <div class="feedback__review">
-      <div class="feedback__author">
-        <img src="../img/author.jpg" class="feedback__author_photo"/>
-        <span class="feedback__author_name">Игорь, <br> о Финляндии</span>
+    <span class="feedback__title">Отзывы</span>
+
+
+    <div class="feedback_autoplay">
+
+
+        <div class="feedback__review">
+         <div class="feedback__author">
+          <img src="../img/author.jpg" class="feedback__author_photo"/>
+          <span class="feedback__author_name">Игорь, <br> о Финляндии</span>
+          </div>
+
+          <div class="feedback__bubble">В зависимости от преобладающих в  спектре полярного сияния линий излучения полярные сияния делятся на два типа: высотные полярные слияния типа А с преобладанием атомарных линий и полярные сияния типа В</div>
+          </div>
+
+
+      <div class="feedback__review">
+         <div class="feedback__author">
+          <img src="../img/author.jpg" class="feedback__author_photo"/>
+          <span class="feedback__author_name">Игорь, <br> о Финляндии</span>
+          </div>
+
+          <div class="feedback__bubble">В зависимости от преобладающих в  спектре полярного сияния линий излучения полярные сияния делятся на два типа: высотные полярные слияния типа А с преобладанием атомарных линий и полярные сияния типа В</div>
       </div>
-        <div class="feedback__bubble">В зависимости от преобладающих в  спектре полярного сияния линий излучения полярные сияния делятся на два типа: высотные полярные слияния типа А с преобладанием атомарных линий и полярные сияния типа В</p>
-        </div>
+
+
+      <div class="feedback__review">
+         <div class="feedback__author">
+          <img src="../img/author.jpg" class="feedback__author_photo"/>
+          <span class="feedback__author_name">Игорь, <br> о Финляндии</span>
+          </div>
+
+          <div class="feedback__bubble">В зависимости от преобладающих в  спектре полярного сияния линий излучения полярные сияния делятся на два типа: высотные полярные слияния типа А с преобладанием атомарных линий и полярные сияния типа В</div>
       </div>
 
-<div style="clear:both"></div>
 
 
-      <!-- <div class="feedback__review">
-        <img src="#" alt="Фото автора отзыва" class="review__photo">
-        <span class="feedback__review_author">Ярослав, о Якутии</span>
-        <div class="feedback__review_bubble">
-          <p class="feedback__review_text">В зависимости от преобладающих в <br> спектре полярного сияния линий <br>излучения полярные сияния делятся<br> на два типа: высотные полярные<br> слияния типа А с преобладанием<br> атомарных линий и полярные<br> сияния типа В</p>
-        </div>
-      </div> -->
 
-      <!-- <div class="feedback_pagination">
-        <div class="feedback_pagination__item--active"></div>
-        <div class="feedback_pagination__item"></div>
-        <div class="feedback_pagination__item"></div>
-        <div class="feedback_pagination__item"></div>
-        <div class="feedback_pagination__item"></div>
-      </div> -->
+
+    </div>
+
+    <div style="clear:both"></div>
 
   </section>
 
 
 
 
-<!-- <div class="single-slide">
-  <div>Слайд1</div>
-        <div>Слайд2</div>
-        <div>Слайд3</div>
-</div> -->
+
+
+
 
 <!-- Контакты -->
-  <section class="contacts">
+  <section id="contacts_block" class="contacts">
 
       <span class="contacts__title">Контакты</span>
       <div class="contacts__container">
 
-      <div class="contacts__filial">
-        <span class="contacts__filial_name_fin">Финляндия</span>
-        <div id="modal_finland" class="contacts_filial_info">
-        <span class="contacts__filial_manager">Менеджер направления: <br>Артем Ливанов</span>
-        <a href="#" class="contacts__filial_telephone">+7(812)67-67-00</a>
-        <a href="#" class="contacts__filial_vklink">vk.com/muravei35</a>
-        <a href="#" class="contacts__filial_email">example@mail.com</a>
+      <div id="filial__fin" class="contacts__filial">
+        <span id="filial__link" class="contacts__filial_name">Финляндия</span>
+        <div id="filial__address" class="filial_close">
+          <span id="" class="contacts__filial_manager">Менеджер направления: <br>Артем Ливанов</span>
+          <span id="" href="#" class="contacts__filial_telephone">+7(812)67-67-00</span>
+          <span id="" href="#" class="contacts__filial_vklink">vk.com/muravei35</span>
+          <span id="" href="#" class="contacts__filial_email">example@mail.com</span>
         </div>
       </div>
 
@@ -269,7 +266,7 @@
 
   </section>
 <!-- Цены -->
-  <section class="price">
+  <section id="price_block" class="price">
     <div class="price__container">
       <span class="price__title">Цены</span>
       <div class="price__categories">
@@ -283,7 +280,7 @@
         </ul>
       </div>
 
-      <table class="price__list">
+      <!-- <table class="price__list">
         <tr>
           <th class="price__list_header">Город</th>
           <th class="price__list_header">Локация</th>
@@ -299,7 +296,8 @@
           <td>Отель "Сияние", 5км от города</td>
           <td>250 000 руб/чел</td>
         </tr>
-      </table>
+      </table>  -->
+
       <a href="#" class="price__full_list">Посмотреть все предложения по Финляндии</a>
     </div>
   </section>

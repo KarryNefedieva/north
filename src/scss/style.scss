@@ -1,6 +1,8 @@
 @import 'normalize.scss';
 @import 'variables.scss';
 
+@import 'slick.scss';
+@import 'slick-theme.scss';
 
 @import 'blocks/header.scss';
 @import 'blocks/main_nav.scss';
@@ -12,36 +14,6 @@
 @import 'blocks/contacts.scss';
 @import 'blocks/price.scss';
 @import 'blocks/footer.scss';
-
-
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .slider {
-        width: 50%;
-        margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 20px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-        color: black;
-    }
-
-
 
 
 @font-face{font-family:'font0475c723a666a5c519583942afd84bcc';

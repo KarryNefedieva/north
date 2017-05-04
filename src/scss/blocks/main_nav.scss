@@ -22,17 +22,16 @@
 
 
   @media (min-width: $screen-xs) {
-display: flex;
+  display: flex;
   background-color: rgba(28,21,49,0.5);
   height: 60px;
   margin-top: 35px;
-
 
   width: 95%;
   margin-right: 10px;
   margin-left: 10px;
   justify-content:space-between;
-  min-width: 500px;
+  // min-width: 500px;
   }
 
   @media (min-width:$screen-sm) {
@@ -42,7 +41,7 @@ display: flex;
   height: 60px;
   margin-top: 20px;
   width: 91%;
-   margin-right: 55px;
+   // margin-right: 55px;
   margin-left: 55px;
   justify-content:space-between;
 
@@ -66,7 +65,7 @@ display: flex;
   position: absolute;
   top: -85px;
   z-index: 3;
-  justify-content:space-between;
+  justify-content:space-around;
   }
 
   @media (min-width:  $screen-sm ){
@@ -74,14 +73,20 @@ display: flex;
   position: absolute;
   top: -85px;
   z-index: 3;
-  justify-content:space-between;
+  justify-content:space-around;
    }
 
 
 }
 
 
+ul.main_nav__list{
+margin-top: 105px;
+margin-left: 10px;
+-webkit-padding-start:0px;
+width: 100%;
 
+}
 
 
 

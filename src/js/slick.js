@@ -202,7 +202,7 @@
 
         if (typeof(index) === 'boolean') {
             addBefore = index;
-            index = null;
+            index =false;
         } else if (index < 0 || (index >= _.slideCount)) {
             return false;
         }
@@ -1852,9 +1852,9 @@
 
         if (typeof(index) === 'boolean') {
             removeBefore = index;
-            index = removeBefore === true ? 0 : _.slideCount - 1;
+            index = removeBefore === false ? 0 : _.slideCount - 1;
         } else {
-            index = removeBefore === true ? --index : index;
+            index = removeBefore === false ? --index : index;
         }
 
         if (_.slideCount < 1 || index < 0 || index > _.slideCount - 1) {
