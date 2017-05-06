@@ -1,3 +1,12 @@
+// .close{
+// display: none;
+// }
+
+// .open{
+// display: block;
+// }
+
+
 .contacts{
 background-image: url("../img/cont_bgc.jpg");
 background-repeat: no-repeat;
@@ -5,8 +14,7 @@ background-size: cover;
 
 
 width: 100%;
-height: 500px;
-color: white;
+height: 400px;
 font-family: $Ubuntu;
 font-size: 14px;
 
@@ -45,23 +53,6 @@ z-index: 1;
 display: none;
 }
 }
-// .filial__fin--open{
-// @media (max-width:  $screen-xs ) {
-// display: block;
-// background-color: white;
-// width: 300px;
-// height: 220px;
-// // color:black;
-// // padding-left: 80px;
-// // padding-top: 60px;
-// padding-bottom: 20px;
-//
-// }
-// @media (min-width:  $screen-sm ) {
-// display: none;
-// }
-// }
-
 
 .contacts__title{
 padding-top: 45px;
@@ -69,6 +60,7 @@ font-family: $Jura;
 font-size: 20px;
 display: block;
 margin-left: 10px;
+color: white;
 
 @media (min-width:  $screen-xs ) {
 padding-top: 50px;
@@ -85,8 +77,7 @@ display: flex;
 margin-left: 10px;
 margin-right: 10px;
 flex-wrap:wrap;
-margin-top: 65px;
-
+margin-top: 35px;
 
 @media (min-width:  $screen-xs ) {
 margin-right: 15px;
@@ -95,7 +86,6 @@ margin-top: 0px;
 
 flex-wrap:wrap;
 // justify-content: space-between;
-
  }
 @media (min-width:  $screen-sm ) {
 margin-left: 55px;
@@ -103,23 +93,37 @@ margin-right: 55px;
 margin-bottom: 50px;
 margin-top: 0px;
 
-flex-row:row;
+flex-direction:row;
 justify-content: space-between;
+}
+}
+.contacts__container--bgc{
+position: relative;
+top: -220px;
+@media (max-width:  $screen-xs ) {
+  display: none;
 }
 }
 
 .contacts__filial{
+color: white;
 display: inline-block;
 min-width: 180px;
 
+&--last{
+  color: white;
+  display: inline-block;
+  min-width: 180px;
+  margin-bottom: 100px;
+}
+
 @media (min-width:  $screen-xs ) {
-margin-right: 20px;
+// margin-right: 20px;
 margin-top: 65px;
 
 }
 @media (min-width:  $screen-sm ) {
 margin-top: 80px;
-
 }
 }
 
@@ -129,36 +133,11 @@ margin-top: 80px;
 }
 }
 
-// #Fin__click{
-// @media (max-width:  $screen-xs ) {
-// z-index: 1;
-// }
-// }
-
 
 .contacts__filial_name{
 display: block;
 margin-left: 20px;
 line-height: 2;
-@media (max-width:  $screen-xs ) {
-padding-left: 80px;
-}
-}
-.contacts__filial_name--black{
-color:black;
-z-index: 1;
-}
-
-
-.contacts__filial--open{
-width: 280px;
-height: 280px;
-left: -5px;
-background-color: white;
-position: absolute;
-top: 2180px;
-z-index: 1
-
 }
 
 .contacts__filial_name:before{
@@ -170,8 +149,8 @@ width: 10px;
 background-color: #89c1a1;
 position: relative;
 left: -20px;
-
 }
+
 .contacts__filial_manager{
 margin-top: 30px;
 display: block
@@ -182,11 +161,12 @@ margin-top: 55px;
 }
 .contacts__filial_vklink{
 margin-top: 25px;
-display: block
+display: block;
 }
 .contacts__filial_email{
 margin-top: 25px;
-display: block
+display: block;
+margin-bottom: 100px;
 }
 
 a.contacts__filial_telephone{
@@ -200,4 +180,85 @@ color: white;
 a.contacts__filial_email{
 text-decoration: none;
 color: white;
+}
+
+.contacts__filial_manager--black{
+margin-top: 30px;
+display: block
+}
+.contacts__filial_telephone--black{
+display: block;
+margin-top: 25px;
+}
+.contacts__filial_vklink--black{
+margin-top: 15px;
+display: block;
+}
+.contacts__filial_email--black{
+margin-top: 15px;
+display: block;
+}
+
+a.contacts__filial_telephone--black{
+text-decoration: none;
+color: black;
+}
+a.contacts__filial_vklink--black{
+text-decoration: none;
+color: black;
+}
+a.contacts__filial_email--black{
+text-decoration: none;
+color: black;
+}
+
+
+.contacts__modal_bgc{
+width: 100%;
+height: 100%;
+background-color: white;
+opacity: 0.4;
+// position: relative;
+// top: -190px;
+// z-index: 2;
+position: fixed;
+top: 0;
+
+@media (min-width:  $screen-xs ) {
+display: none;
+}
+}
+
+.contacts__modal_window{
+display: block;
+background-color: white;
+height: 240px;
+width: 95%;
+position: relative;
+margin: 0 auto;
+z-index: 1;
+color: black;
+top: 10px;
+@media (min-width:  $screen-xs ) {
+display: none;
+}
+}
+
+.contacts__modal_filial{
+  margin-left: 80px;
+  padding-top: 20px;
+}
+
+.contacts__modal-close:before{
+  content:"";
+  background-image: url("../img/close.png");
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+  margin-right: 15px;
+
+
+
 }

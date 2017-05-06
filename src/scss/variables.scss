@@ -1,7 +1,13 @@
-$screen-xxs:                  0px;
-$screen-xs:                   320px;
-$screen-sm:                   768px;
-$screen-md:                   992px;
+// $screen-xxs:                  0px;
+// $screen-xs:                   320px;
+// $screen-sm:                   768px;
+// $screen-md:                   992px;
+// $screen-lg:                   1200px;
+// $screen-xl:                   1920px;
+
+$screen-xs:                   768px;
+$screen-sm:                   1024px;
+// $screen-md:                   992px;
 $screen-lg:                   1200px;
 $screen-xl:                   1920px;
 
@@ -16,4 +22,6 @@ $Nord:'Nord-Medium';
 
 $font-family:                 'Open Sans_my', sans-serif;
 $font-size:                   14px;
+
+$slick-dot-color-active:yellow;
 

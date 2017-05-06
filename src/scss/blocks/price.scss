@@ -7,9 +7,7 @@ height: 100%;
 }
 }
 
-ul{
-padding-left: 55px;
-}
+
 
 .price__title{
 font-family: $Jura;
@@ -17,46 +15,48 @@ font-size: 20px;
 display: block;
 padding-top: 30px;
 margin-left: 10px;
+
 @media (min-width:  $screen-xs ) {
 padding-top: 35px;
+padding-left: 10px;
 }
 @media (min-width:  $screen-sm ) {
 font-size: 36px;
 padding-top: 90px;
-margin-left: 55px;
+
 }
 }
 
-.price__categories{
+.price__categories ul{
 display: flex;
 font-family: $Jura;
-flex-row: row;
-font-size: 10px;
-margin-right: 15px;
-margin-top: 35px;
-justify-content: space-align;
+flex-direction: column;
+font-size: 12px;
 
-// $--active{
-// color: #89c1a1;
-// }
+padding-left: 10px;
 
 @media (min-width:  $screen-xs ) {
-font-size: 12px;
+padding-left: 10px;
+font-size: 20px;
+flex-direction: row;
+justify-content:space-between;
 }
 @media (min-width:  $screen-sm ) {
 font-size: 20px;
-justify-content: space-between;
+padding-left: 55px;
+flex-direction: row;
+justify-content:space-between;
 }
 }
 
-li.price__categories_item{
+.price__categories li{
 display: inline-block;
-margin-right: 70px;
-justify-content: space-between;
+margin-top: 30px;
+}
 
-// $--active{
-// color: #89c1a1;
-// }
+li.price__categories_item--active{
+display: inline-block;
+color: #89c1a1;
 }
 
 .price__categories_item:after{
@@ -70,36 +70,12 @@ position: relative;
 margin-left: 15px;
 }
 
-// li.price__categories_item--active{
-// display: inline-block;
-// margin-right: 70px;
-// justify-content: space-between;
-// }
-
-// .price__categories_item--active{
-// color: #89c1a1;
-// display: flex;
-// font-family: $Jura;
-// flex-row: row;
-// font-size: 10px;
-// margin-right: 15px;
-// margin-top: 35px;
-//  justify-content: space-between;
-
-// @media (min-width:  $screen-xs ) {
-//  font-size: 12px;
-// }
-// @media (min-width:  $screen-sm ) {
-//  font-size: 20px;
-//  justify-content: space-between;
-// }
-// }
 
 .price__categories_item--active:after{
 content: '';
 display: inline-block;
 background-image: url("../img/arrow_active.png");
-transform:rotate(90deg);
+transform:rotate(0deg);
 background-repeat: no-repeat;
 height: 8px;
 width: 8px;
@@ -107,27 +83,59 @@ position: relative;
 margin-left: 15px;
 }
 
-.price__list{
-  // border: 1px solid #d0d0d0;
-
-  text-align: center;
-  font-family: $Ubuntu;
-  font-size: 10px;
-  border-collapse: collapse;
-  margin-left: 10px;
-  margin-top: 20px;
+.price__list--active{
+display: none;
 
 @media (min-width:  $screen-xs ) {
+display: block;
 width: 450px;
-  margin-top: 30px;
-
+margin-top: 30px;
+text-align: center;
+font-family: $Ubuntu;
+font-size: 16px;
+border-collapse: collapse;
 }
+
 @media (min-width:  $screen-sm ) {
+display: block;
 width: 770px;
 font-size: 16px;
- margin-left: 55px;
-   margin-top: 30px;
+padding-left: 55px;
+text-align: center;
+font-family: $Ubuntu;
+font-size: 16px;
+border-collapse: collapse;
+margin-top: 20px;
 }
+}
+
+.price__list--active_mobile{
+text-align: center;
+font-family: $Ubuntu;
+font-size: 10px;
+border-collapse: collapse;
+margin-top: 20px;
+
+@media (min-width:  $screen-xs ) {
+display: none;
+}
+
+@media (min-width:  $screen-sm ) {
+display: none;
+}
+}
+
+
+.price__list{
+display: none;
+}
+
+.price__list--mobile{
+display: none;
+}
+
+table.price__list{
+  display: none;
 }
 
 tr{
@@ -142,22 +150,69 @@ td{
    border: 1px solid #d0d0d0;
  }
 
-
 a.price__full_list{
-  display: block;
-  margin-top: 30px;
- font-size: 10px;
- font-family: $Ubuntu;
-  margin-left: 10px;
+  display: none;
+}
+a.price__full_list--mobile{
+  display: none;
+}
+a.price__full_list--active{
+display: none;
 
 @media (min-width:  $screen-xs ) {
-  font-size: 16px;
-  margin-bottom: 50px;
+display: block;
+margin-top: 30px;
+font-size: 10px;
+font-family: $Ubuntu;
+font-size: 16px;
+margin-bottom: 50px;
 }
 @media (min-width:  $screen-sm ) {
- font-size: 16px;
+display: block;
+margin-top: 30px;
+font-size: 10px;
+font-family: $Ubuntu;
+font-size: 16px;
  margin-left: 55px;
  margin-bottom: 80px;
 
 }
 }
+
+a.price__full_list--active_mobile{
+display: block;
+margin-top: 30px;
+font-size: 10px;
+font-family: $Ubuntu;
+font-size: 12px;
+margin-bottom: 50px;
+
+@media (min-width:  $screen-xs ) {
+display: none;
+
+}
+@media (min-width:  $screen-sm ) {
+display: none;
+}
+}
+
+.price__full_list--active_mobile{
+display: block;
+margin-top: 30px;
+font-size: 10px;
+font-family: $Ubuntu;
+font-size: 12px;
+margin-bottom: 50px;
+
+@media (min-width:  $screen-xs ) {
+display: none;
+
+}
+@media (min-width:  $screen-sm ) {
+display: none;
+}
+}
+
+
+
+

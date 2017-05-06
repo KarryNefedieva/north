@@ -1,6 +1,6 @@
 .fact{
 background-color: #f7f7f7;
-height: 450px;
+height: 100%;
 display: block;
 
 
@@ -19,7 +19,7 @@ height: 300px;
 
   position: absolute;
   width: 2px;
-  height: 225px;
+  height: 200px;
   margin-top: 50px;
   margin-left: 5px;
 
@@ -41,6 +41,7 @@ display: flex;
 flex-direction: column;
 margin-right: 10px;
 margin-left: 10px;
+margin-bottom: 30px;
 
 @media (min-width:  $screen-xs ) {
 flex-direction: row;

@@ -10,8 +10,7 @@ flex-direction:row;
 @media (min-width:  $screen-sm) {
   background-color: white;
   height: 530px;
-  // max-width: 1200px;
-  // margin: auto;
+
 }
 }
 .seasons_container{
@@ -20,15 +19,7 @@ position: center;
 }
 .seasons__map{
 display: none;
-// background-size: cover;
-// background-color: red;
-// height: 230px;
-// width: 100%;
-// position: relative;
-// top: 200px;
-// z-index: 2;
-// flex-schrink: 0;
-// left: 200px;
+
 @media (min-width:  $screen-xs) {
 display: block;
 background-image: url(../img/map.jpg);
@@ -58,7 +49,7 @@ background-image: url(../img/map.jpg);
 background-size: cover;
 height: 230px;
 width: 100%;
-margin-top: 60px;
+margin-top: 50px;
 
 
 @media (min-width:  $screen-xs) {
@@ -71,7 +62,7 @@ font-family: $Ubuntu;
 margin-left: 0;
 
 @media (min-width:  $screen-xs) {
-
+width: 50%;
 min-width: 250px;
 
 }
@@ -113,10 +104,8 @@ margin-left: 35px;
 
 .season__legend{
 position: relative;
-top: 180px;
+top: 150px;
 left: 10px;
-// max-width: 250px;
-
 
 @media (min-width:  $screen-xs ) {
 left: 10px;
@@ -237,7 +226,7 @@ margin-left: 10px;
 margin-top: 45px;
 // max-width: 300px;
 line-height: 1.5;
-width: 70%;
+max-width: 70%;
 }
 @media (min-width:  $screen-sm ) {
 font-size: 16px;
