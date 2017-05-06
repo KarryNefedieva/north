@@ -997,6 +997,13 @@ a.main_screen__button--allphoto :hover {
   float: left;
   background-color: white; }
 
+.feedback .slick-arrow {
+  display: none; }
+
+.feedback .slick-next:before {
+  display: none;
+  content: ""; }
+
 .slick-active:before {
   content: "";
   background-color: white; }
@@ -1248,7 +1255,8 @@ a.price__full_list--active_mobile {
   font-size: 10px;
   font-family: "Ubuntu", sans-serif;
   font-size: 12px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  color: #201c38; }
 
 .price__full_list--active_mobile {
   display: block;
@@ -1337,7 +1345,7 @@ footer {
   .legend__title{
     display: block;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 30px;
     margin-left: 10px;
     margin-top: 45px;
     color: black; }
@@ -1391,7 +1399,7 @@ footer {
     margin-left: 20px; }
   .fact__title{
     font-weight: 300;
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 40px;
     padding-left: 10px; }
   .fact__stage_number{
@@ -1484,7 +1492,8 @@ footer {
     font-size: 14px;
     height: 100%; }
   .contacts__title{
-    padding-top: 50px; }
+    padding-top: 50px;
+    font-size: 30px; }
   .contacts__container{
     margin-right: 15px;
     margin-bottom: 50px;
@@ -1500,6 +1509,7 @@ footer {
   .price{
     height: 100%; }
   .price__title{
+    font-size: 30px;
     padding-top: 35px;
     padding-left: 10px; }
   .price__categories ul{
@@ -1513,6 +1523,7 @@ footer {
     display: block;
     width: 450px;
     margin-top: 30px;
+    margin-left: 10px;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
@@ -1525,7 +1536,9 @@ footer {
     font-size: 10px;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-left: 10px;
+    color: #201c38; }
   a.price__full_list--active_mobile{
     display: none; }
   .price__full_list--active_mobile{
@@ -1732,7 +1745,8 @@ footer {
   .feedback__title{
     padding-top: 75px;
     margin-left: 55px;
-    margin-right: 55px; }
+    margin-right: 55px;
+    font-size: 30px; }
   .feedback__review{
     margin-left: 55px;
     -ms-flex-negative: 2;
@@ -1779,6 +1793,7 @@ footer {
   .price{
     height: 535px; }
   .price__title{
+    font-size: 30px;
     font-size: 36px;
     padding-top: 90px; }
   .price__categories ul{
@@ -1792,12 +1807,12 @@ footer {
     display: block;
     width: 770px;
     font-size: 16px;
-    padding-left: 55px;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     border-collapse: collapse;
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-left: 55px; }
   .price__list--active_mobile{
     display: none; }
   a.price__full_list--active{
@@ -1807,7 +1822,8 @@ footer {
     font-family: "Ubuntu", sans-serif;
     font-size: 16px;
     margin-left: 55px;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    color: #201c38; }
   a.price__full_list--active_mobile{
     display: none; }
   .price__full_list--active_mobile{

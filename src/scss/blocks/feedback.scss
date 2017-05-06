@@ -43,12 +43,13 @@ display: block;
 margin-left: 10px;
 @media (min-width:  $screen-xs ) {
 font-size: 30px;
- margin-left: 10px;
+margin-left: 10px;
 }
- @media (min-width:  $screen-sm ) {
+@media (min-width:  $screen-sm ) {
 padding-top: 75px;
 margin-left: 55px;
 margin-right: 55px;
+font-size: 30px;
 }
 }
 
@@ -189,9 +190,13 @@ background-color: white;
 
 }
 
-// ul.slick-dots{
-// width: 1200px;
-// }
+.feedback .slick-arrow{
+  display: none
+}
+.feedback .slick-next:before{
+  display: none;
+  content:"";
+}
 
 .slick-active:before{
   content:"";
