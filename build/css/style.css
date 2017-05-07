@@ -926,7 +926,8 @@ a.main_screen__button--allphoto :hover {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 30px;
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box; }
 
 .feedback__button {
   width: 20px;
@@ -1458,7 +1459,8 @@ footer {
     height: 100%; }
   .feedback_autoplay{
     margin-left: 10px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    box-sizing: border-box; }
   .feedback__title{
     font-size: 30px;
     margin-left: 10px; }
@@ -1741,7 +1743,7 @@ footer {
   .feedback_autoplay{
     margin-left: 55px;
     margin-right: 55px;
-    width: 100%; }
+    box-sizing: border-box; }
   .feedback__title{
     padding-top: 75px;
     margin-left: 55px;
@@ -1795,7 +1797,8 @@ footer {
   .price__title{
     font-size: 30px;
     font-size: 36px;
-    padding-top: 90px; }
+    padding-top: 90px;
+    padding-left: 550px; }
   .price__categories ul{
     font-size: 20px;
     padding-left: 55px;
