@@ -1,31 +1,35 @@
 .feedback{
-  background-color: #b2dad0;
-  height: 100%;
-  width: 100%;
+background-color: #b2dad0;
+height: 100%;
+width: 100%;
+overflow: hidden;
 
-  @media (min-width:  $screen-xs ) {
-  height: 100%;
+@media (min-width:  $screen-xs ) {
+height: 100%;
+overflow: hidden;
 }
- @media (min-width:  $screen-sm ) {
-  height: 100%;
+@media (min-width:  $screen-sm ) {
+height: 100%;
+overflow: hidden;
 }
 }
-
 
 .feedback_autoplay{
 margin-left: 10px;
 margin-right: 10px;
 margin-bottom: 30px;
-width: 100%;
+width: 90%;
+box-sizing:border-box;
 
 @media (min-width:  $screen-xs ) {
 margin-left: 10px;
 margin-right: 10px;
+box-sizing:border-box
 }
- @media (min-width:  $screen-sm ) {
+@media (min-width:  $screen-sm ) {
 margin-left: 55px;
 margin-right: 55px;
-width: 100%;
+box-sizing:border-box
 }
 }
 
@@ -57,7 +61,6 @@ font-size: 30px;
 display: inline-block;
 margin-left: 10px;
 display: flex;
-// width: 40%;
 
 @media (min-width:  $screen-xs ) {
 margin-left: 10px;
@@ -67,7 +70,6 @@ flex-shrink:2;
 @media (min-width:  $screen-sm ) {
 margin-left: 55px;
 flex-shrink:2;
-// margin-bottom: 30px
 }
 }
 
@@ -138,28 +140,29 @@ margin-left: 70px;
 }
 
 .feedback__bubble:before{
-  content: '';
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 20px solid white;
-  border-left: 25px solid transparent;
-  position: relative;
-  left: -35px;
-  top: -20px;
-  @media (min-width:  $screen-xs ) {
-  border-top: 15px solid white;
-  border-left: 25px solid transparent;
-  left: -30px;
-  top: -20px;
-  flex-shrink:2;
+content: '';
+display: inline-block;
+width: 0;
+height: 0;
+border-top: 20px solid white;
+border-left: 25px solid transparent;
+position: relative;
+left: -35px;
+top: -20px;
+
+@media (min-width:  $screen-xs ) {
+border-top: 15px solid white;
+border-left: 25px solid transparent;
+left: -30px;
+top: -20px;
+flex-shrink:2;
 }
 @media (min-width:  $screen-sm ) {
-  border-top: 30px solid white;
-  border-left: 45px solid transparent;
-  left: -75px;
-  top: -30px;
-  flex-shrink:2;
+border-top: 30px solid white;
+border-left: 45px solid transparent;
+left: -75px;
+top: -30px;
+flex-shrink:2;
 }
 
 }
@@ -204,6 +207,7 @@ background-color: white;
 }
 
 .feedback .slick-dots{
+
   li{
     &.slick-active button:before{
     content:'';
@@ -215,14 +219,12 @@ background-color: white;
   }
 }
 
-
-
 .feedback .slick-prev:before{
-  content:'';
-  display: none;
+content:'';
+display: none;
 }
 
 .feedback .slick-next:before{
-  content:'';
-  display: none;
+content:'';
+display: none;
 }

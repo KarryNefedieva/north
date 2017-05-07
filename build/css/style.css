@@ -689,7 +689,8 @@ a.main_screen__button--allphoto :hover {
   height: 450px;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  color: white; }
+  color: white;
+  overflow: hidden; }
 
 .legend__container {
   display: -ms-flexbox;
@@ -823,7 +824,8 @@ a.main_screen__button--allphoto :hover {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-      flex-direction: row; }
+      flex-direction: row;
+  overflow: hidden; }
 
 .seasons_container {
   margin: auto;
@@ -920,13 +922,14 @@ a.main_screen__button--allphoto :hover {
 .feedback {
   background-color: #b2dad0;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .feedback_autoplay {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 30px;
-  width: 100%;
+  width: 90%;
   box-sizing: border-box; }
 
 .feedback__button {
@@ -1168,12 +1171,15 @@ a.contacts__filial_email--black {
   margin-top: 15px;
   margin-right: 15px; }
 
+.price {
+  width: 100%; }
+
 .price__title {
   font-family: "Jura", sans-serif;
   font-size: 20px;
   display: block;
   padding-top: 30px;
-  margin-left: 10px; }
+  padding-left: 40px; }
 
 .price__categories ul {
   display: -ms-flexbox;
@@ -1181,8 +1187,7 @@ a.contacts__filial_email--black {
   font-family: "Jura", sans-serif;
   -ms-flex-direction: column;
       flex-direction: column;
-  font-size: 12px;
-  padding-left: 10px; }
+  font-size: 12px; }
 
 .price__categories li {
   display: inline-block;
@@ -1233,9 +1238,10 @@ table.price__list {
   display: none; }
 
 tr {
-  height: 40px; }
+  height: 65px; }
 
 th {
+  height: 65px;
   border: 1px solid #d0d0d0; }
 
 td {
@@ -1456,7 +1462,8 @@ footer {
     line-height: 1.5;
     max-width: 70%; }
   .feedback{
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
   .feedback_autoplay{
     margin-left: 10px;
     margin-right: 10px;
@@ -1509,7 +1516,8 @@ footer {
   .contacts__modal_window{
     display: none; }
   .price{
-    height: 100%; }
+    height: 100%;
+    width: 100%; }
   .price__title{
     font-size: 30px;
     padding-top: 35px;
@@ -1739,7 +1747,8 @@ footer {
     margin-top: 80px;
     width: 50%; }
   .feedback{
-    height: 100%; }
+    height: 100%;
+    overflow: hidden; }
   .feedback_autoplay{
     margin-left: 55px;
     margin-right: 55px;
@@ -1793,12 +1802,13 @@ footer {
   .contacts__filial{
     margin-top: 80px; }
   .price{
-    height: 535px; }
+    height: 535px;
+    width: 100%; }
   .price__title{
     font-size: 30px;
     font-size: 36px;
     padding-top: 90px;
-    padding-left: 550px; }
+    padding-left: 55px; }
   .price__categories ul{
     font-size: 20px;
     padding-left: 55px;

@@ -4,7 +4,6 @@ display: none;
 
 @media (min-width:  $screen-xs ) {
 display: block;
-
 height: 55px;
 background-color:#201b38;
 color: white;
@@ -12,9 +11,9 @@ font-family: $Ubuntu;
 font-size: 16px;
 width: 100%;
 }
+
 @media (min-width:  $screen-sm ) {
 display: block;
-
 height: 55px;
 background-color:#201b38;
 color: white;

@@ -26,7 +26,7 @@ $(document).ready(function(){
     if (w <= 768) { // Если ширина окна меньше, либо равна 600
       console.log(1);
       $('.feedback_autoplay').slick({
-        dots: true,
+        // dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -35,7 +35,7 @@ $(document).ready(function(){
     } else {
       console.log(2);
       $('.feedback_autoplay').slick({
-        dots: true,
+        // dots: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,

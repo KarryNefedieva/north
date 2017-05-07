@@ -3,26 +3,22 @@ background-color: #f7f7f7;
 height: 100%;
 display: block;
 
-
 @media (min-width:  $screen-xs) {
 height: 100%;
-
 }
  @media (min-width:  $screen-sm) {
 height: 300px;
-
- }
+}
 }
 
 .fact__green_line{
-  background-color:#03eaa5;
+background-color:#03eaa5;
 
-  position: absolute;
-  width: 2px;
-  height: 200px;
-  margin-top: 50px;
-  margin-left: 5px;
-
+position: absolute;
+width: 2px;
+height: 200px;
+margin-top: 50px;
+margin-left: 5px;
 
 @media (min-width:  $screen-xs ) {
 height: 1px;
@@ -50,7 +46,6 @@ margin-right: 20px;
 margin-left: 20px;
 }
 
-
 @media (min-width:  $screen-sm ) {
 flex-direction: row;
 justify-content: space-between;
@@ -59,16 +54,11 @@ margin-left: 55px;
 }
 }
 
-
-
 .fact__stage_block{
   float: left;
   flex-direction: row;
   margin-top: 30px;
 }
-
-
-
 
 .fact__title{
 font-family: $Jura;
@@ -104,7 +94,6 @@ font-size: 27px;
 position: relative;
 left: 10px;
 
-
 @media (min-width:  $screen-xs) {
 font-size: 27px;
 position: relative;
@@ -115,8 +104,6 @@ font-size: 45px;
 position: relative;
 left: -25px;
 }
-
-
 }
 
 .fact__stage_number:before{
@@ -127,7 +114,6 @@ width: 15px;
 background-color:#03eaa5;
 position: relative;
 left: -10px;
-
 @media (min-width:  $screen-xs ){
 top:15px;
 left: 20px;
